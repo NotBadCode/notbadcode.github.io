@@ -14,7 +14,7 @@ body{
 }
 
 .center_wraper{
-	width: 940px;
+	width: 880px;
 	margin: 0px auto;
 	padding: 0px 10px;
 }
@@ -48,6 +48,8 @@ p{
 	font-size: 16px;
 	line-height: 22px;
 	color: #b1b3b4;
+	white-space: normal;
+	font-weight: 300;
 }
 
 .btn{
@@ -98,6 +100,10 @@ p{
 	margin-right: 44px;
 }
 
+.header_navbar ul li:last-child{
+	margin-right: 67px;
+}
+
 .header_navbar ul .active{
 	border-bottom: 2px solid red;
 }
@@ -105,14 +111,69 @@ p{
 .account_menu{
 	display: inline-block;
 	float: right;
-	width: 95px;
+	padding-left: 26px;
+	background: url(img/cart.png) no-repeat scroll 0 7px;
 }
+
 
 /*----SLIDER-------------------------------------------------------------------------*/
 
 .slider{
+	position: relative;
+	margin: 56px 0;
 	width: 100%;
-	height: 352px;
+	height: 240px;
+}
+
+.slider_controls{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 10px;
+	text-align: center;
+	z-index: 100; 
+}
+
+.slider_controls i{
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+	background: white;
+	border: 3px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider_controls .active{
+	background: #c1c1c1;
+}
+
+.slide{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slide:nth-child(1){
+	background: url(img/bg_slide1.png);
+	background-repeat: no-repeat;
+	background-position: 100% 50%;
+}
+
+.slide_text{
+	width: 380px;
+	padding: 20px 0;
+}
+
+.slide_text .btn{
+	width: 240px;
 }
 
 /*----SERVICES-------------------------------------------------------------------------*/
@@ -120,6 +181,7 @@ p{
 .services{
 	border-bottom: 2px solid #eeeeee;
 	padding-bottom: 80px;
+	white-space: nowrap;
 }
 
 .services .block{
@@ -133,7 +195,7 @@ p{
 }
 
 .services .block:nth-child(2) .btn{
-		background: #00ca74;
+	background: #00ca74;
 }
 
 .services .block:nth-child(3) .btn{
@@ -190,6 +252,7 @@ p{
 	padding-top: 43px;
 	padding-bottom: 36px;
 	border-bottom: 2px solid #eeeeee;
+	white-space: nowrap;
 }
 
 .sites_logo{
@@ -207,18 +270,157 @@ p{
 }
 
 .sites_logo:nth-child(2){
-	padding: 0 100px;
+	padding: 0 80px;
 }
 
 /*----SHOP--------------------------------------------------------------------------*/
 
 .shop{
-	margin-top: 80px;
+	margin: 80px 0px;
 }
+
+.shop:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.shop_left h2{
+	margin: 0;
+}
+
+.shop_left{
+	float: left;
+}
+
+.shop_left ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.shop_left ul li{
+	padding-left: 33px;
+	position: relative;
+}
+
+.cb li{
+	background: url(img/cb.png) no-repeat scroll 0 1px;
+}
+
+.rb li{
+	background: url(img/rb.png) no-repeat scroll 0 1px;
+}
+
+.shop_right{
+	float: right;
+	width: 560px;
+}
+
+.shop_right:after{
+	content: "";
+	display: table;
+	clear: both;;
+}
+
+.shop_right ul{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 26px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.shop_right ul li{
+	display: inline-block;
+	margin-right: 40px;
+}
+
+.goods{
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 80px;
+	padding: 0;
+	width: 240px;
+	background: url(img/img_frame.png) no-repeat scroll;
+}
+
+.goods:hover{
+	opacity: 1;
+}
+
+.goods img{
+	margin-top: 30px;
+	width: 240px;
+	height: 240px;
+	background: #d6494d;
+}
+
+.goods_price{
+	opacity: 0;
+	position: absolute;
+	top: 50px;
+	left: 20px;
+	width: 200px;
+	text-align: center;
+	background: #ffffff;
+}
+
+.goods_price:hover{
+	opacity: 1;
+}
+
+.goods_price p{
+	color: black;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0;
+}
+
+.goods_price .btn{
+	margin: 30px 0;
+}
+
+.goods_price{
+	display: ;
+}
+
+.goods:nth-child(odd){
+	float: right;
+}
+
+.nav_btns{
+}
+
+.nav_btn{
+	display: inline-block;
+	padding: 10px 13px;
+	margin: 0;
+	margin-right: 10px;
+	line-height: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	background: #eeeeee;
+	border: 2px solid #eeeeee;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.nav_btns .active{
+	background: #ffffff;
+}
+
 
 .range_filter{
     width: 240px;
-    margin: 50px auto;
+    margin: 50px 0;
+    float: left;
 }
 
 .range_controls{
@@ -255,6 +457,36 @@ p{
     cursor: pointer;
 }
 
+.range_controls .min_toggle{
+	left: 30px;
+}
+
+.range_controls .max_toggle{
+	left: 145px;
+}
+
+
+.prise_controls input{
+	width: 60px;
+	padding: 8px 10px;
+	margin-left: 10px;
+	border: none;
+	background: #f1f1f1;
+
+	font-size: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300px;
+	font-style: normal;
+	text-align: center;
+	color: #283136;
+	border-radius: 5px;
+	white-space: nowrap;
+}
+
+.prise_controls .min_price{
+	margin-right: 18px;
+}
+
 /*----MAP--------------------------------------------------------------------------*/
 
 .map{
@@ -280,6 +512,7 @@ p{
 .contacts .btn{
 	width: 195px;
 }
+
 
 /*----FOOTER--------------------------------------------------------------------------*/
 
