@@ -1,0 +1,313 @@
+
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    background: #ffffff;
+}
+
+.center_wraper{
+	width: 940px;
+	margin: 0px auto;
+	padding: 0px 10px;
+}
+
+.center_wraper:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a{
+	color: black;
+    text-decoration: none;
+}
+
+h1{
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h2{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+p{
+	margin-top: 13px;
+	font-size: 16px;
+	line-height: 22px;
+	color: #b1b3b4;
+}
+
+.btn{
+	display: inline-block;
+	width: 140px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color:  #ffffff;
+	background: #d6494d;
+	border-radius: 2px;
+}
+
+
+/*----HEADER----------------------------------------------*/
+
+.header{
+	margin: 0;
+	padding: 0;
+	background: #eeeeee;	
+}
+
+.header_navbar{
+	padding-top: 54px;
+	background: url("img/logo.png") no-repeat scroll 0 27px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.header_navbar:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header_navbar ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header_navbar ul li{
+	display: inline-block;
+	margin-right: 44px;
+}
+
+.header_navbar ul .active{
+	border-bottom: 2px solid red;
+}
+
+.account_menu{
+	display: inline-block;
+	float: right;
+	width: 95px;
+}
+
+/*----SLIDER-------------------------------------------------------------------------*/
+
+.slider{
+	width: 100%;
+	height: 352px;
+}
+
+/*----SERVICES-------------------------------------------------------------------------*/
+
+.services{
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 80px;
+}
+
+.services .block{
+	display: inline-block;
+	margin-top: 80px;
+	width: 240px;
+}
+
+.services .block:nth-child(2){
+	margin: 0 80px;
+}
+
+.services .block:nth-child(2) .btn{
+		background: #00ca74;
+}
+
+.services .block:nth-child(3) .btn{
+	background: #efc84a;
+}
+
+/*----FEATURES---------------------------------------------------------------------------*/
+
+.features{
+	width: 100%;
+	padding-bottom: 74px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.features:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.features_text{
+	display: inline-block;
+	margin-top: 80px;
+}
+
+.features_text ul{
+	list-style: none;
+	padding: 0;
+}
+
+.features_text ul li{
+	position: relative;
+	padding-left: 37px;
+}
+
+.features_text ul li:before{
+	content: "";
+	position: absolute;
+	width: 25px;
+	top: 9px;
+	left: 0px;
+	border-bottom: 2px solid #fb565a;
+}
+
+.features_logo{
+	float: right;
+	display: inline-block;
+	margin-top: 80px;
+}
+
+/*----SITES-------------------------------------------------------------------------*/
+
+.sites{
+	padding-top: 43px;
+	padding-bottom: 36px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+.sites_logo{
+	display: inline-block;
+	width: 240px;
+}
+
+.sites_logo img{
+	padding: 0 21px;
+	opacity: 0.4;
+}
+
+.sites_logo img:hover{
+	opacity: 1;
+}
+
+.sites_logo:nth-child(2){
+	padding: 0 100px;
+}
+
+/*----SHOP--------------------------------------------------------------------------*/
+
+.shop{
+	margin-top: 80px;
+}
+
+.range_filter{
+    width: 240px;
+    margin: 50px auto;
+}
+
+.range_controls{
+    position: relative;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 0 30px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.range_controls .scale{
+    margin-top: 30px;
+    height: 2px;
+    background: #d7dcde;
+}
+
+.range_controls .bar{
+    height: 2px;
+    background: red;
+}
+
+.range_controls .toggle{
+    position: absolute;
+    top:  22px;
+    left: 30px;
+    width:  4px;
+    height: 4px;
+    border: 8px solid white;
+    border-radius: 50%; 
+    background: #ababab;
+    box-shadow: 0 3px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+/*----MAP--------------------------------------------------------------------------*/
+
+.map{
+	position: relative;
+	margin: 0 auto;
+	height: 416px;
+	background: url(img/map.png) no-repeat scroll;
+}
+
+.contacts{
+	display: inline-block;
+	margin-top: 88px;
+	padding: 33px 20px;
+	background: #ffffff;
+}
+
+.contacts h2{
+	margin: 0;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.contacts .btn{
+	width: 195px;
+}
+
+/*----FOOTER--------------------------------------------------------------------------*/
+
+.footer:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer ul{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-top: 77px;
+	margin-bottom: 77px;
+	list-style: none;
+}
+
+.footer ul li{
+	display: inline-block;
+	margin-right: 27px;
+	opacity: 0.2;
+}
+
+.footer ul li:hover{
+	opacity: 1;
+}
+
+.footer_text{
+	display: inline-block;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="utf-8"/>
+		<link type="text/css" rel="stylesheet" href="style.css"/>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+		<title>Barbershop</title>
+	</head>
+
+	<body>
+			<div class="header">
+				<div class="center_wraper"> 
+					<ul class="navbar">
+								<li><a href="http://test.ru/barbershop/" ><span class="header_menu_active">Главная</span></a></li>
+								<li><a href=""  >Информация</a></li>
+								<li><a href=""  >Новости</a></li>
+								<li><a href="prise.html"  >Прайс-лист</a></li>
+								<li><a href=""  >Магазин</a></li>
+								<li><a href=""  >Контакты</a></li>
+					</ul>
+					<div class="account_menu">
+						<a href="#" class="account_menu_enter">Вход</a>
+					</div>
+				</div>
+			</div> 
+
+			<div class="center_wraper"> 
+				<div class="logo">
+					<a href="#"><img src="img/logo.png" alt="LOGO"/></a>
+				</div>
+
+				<ul class="features">
+					<li>
+						<div class="features_title">
+							Быстро
+						</div>
+						<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладетель стильной стрижки-минутки!</p>
+					</li>
+					<li>
+						<div class="features_title">
+							Круто		
+						</div>
+						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+					</li>
+					<li>
+						<div class="features_title">
+							Дорого
+						</div>
+						<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
+					</li>
+				</ul>
+
+				<div class="main">
+					<div class="main_left_column">
+						<div class="column_title">Новости</div>
+						<ul>
+							<li>
+								<a href="">Мы наконец завезли Ягермейстер! Теперь вы можете пропустить стаканчик во время стрижки</a>
+								<br>
+								<span class="date">25 сентября</span>
+							</li>
+							<li>
+								<a href="">В нашей команде пополнение, Борис «Бритва» Стригунец, обладетель множетсва титулов и наград пополнил наши стройные ряды</a>
+								<br>
+								<span class="date">19 сентября</span>
+							</li>
+						</ul>
+						<a href="" class="btn">Все новости</a>
+					</div>
+					<div class="main_right_column">
+						<div class="column_title">Фотогалерея</div>
+						<div class="gallery">
+							<div class="gallery_items">
+								<img class="gallery_item" alt="Фото" src="img/gallery_item.jpg"/>
+								
+							</div>
+							<button class="btn_prev">Назад</button>
+							<button class="btn">Вперед</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="main">
+					<div class="main_left_column">
+						<div class="column_title">Контактная информация</div>
+						<ul>
+							<li>
+								Barbershop «Borodinski»<br/>
+								Адрес: г. Москва, ул. Собаки Павлова, д. 13<br/>
+								Телефон: +7 (495) 666-02-666
+							</li>
+							<li>
+								Время работы:<br/>
+								пн — пт: с 10:00 до 22:00<br/>
+								сб — вс: с 10:00 до 19:00
+							</li>
+						</ul>
+						<a href="" class="btn_prev">Как проехать</a>
+						<a href="" class="btn">Обратная Связь</a>
+					</div>
+					<div class="main_right_column">
+						<div class="column_title">Записаться</div>
+						<p>Укажите желаемую дату и время и мы свяжемся<br/>
+						   с Вами для подтверждения брони</p>
+						<form class="form" method="post" action="#">
+								<fieldset>
+									<input type="text" placeholder="Дата" name="date"></input>
+									<input type="text" placeholder="Время" name="time"></input>
+									<input type="text" placeholder="Ваше Имя" name="name"></input>
+									<input type="text" placeholder="Телефон" name="phone"></input>
+								</fieldset>
+								<fiedset>
+									<input type="submit" value="Отправить"></input>
+								</fiedset>
+						</form>
+					</div>	
+				</div>
+			</div>
+
+			<div class="footer">
+				<div class="center_wraper">
+					<div class="contacts">
+						Barbershop «Borodinski»<br/>
+						Адрес: г. Москва, ул. Собаки Павлова, д. 13<br/>
+						Телефон: +7 (495) 666-02-666
+					</div>
+					<div class="social_buttons">
+						<span>Давайте дружить!</span>
+						<a href="http://vk.com" class="btn_social1"></a>
+						<a href="http://facebook.com" class="btn_social2"></a>
+						<a href="http://instgram.com" class="btn_social3"></a>
+					</div>
+					<div class="copyright">
+						Дизайн сайта:
+						<a href="" class="btn">......</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="login_popup">
+				<h1>Личный кабинет</h1>
+					Введите пожалуйста свой логин и пароль
+					Если вы забыли пароль 
+				<form class="form" method="post" action="./auth">				
+					<fieldset>
+						<input type="text" placeholder="Логин" name="login"></input>
+						<input type="password" placeholder="Пароль" name="password"></input>
+
+						<a class="restore" hred="restore">Я забыл пароль</a>
+						<lable><input type="checkbox" name="remember">Запомнить меня</input></lable>
+
+						<input type="submit" value="Войти"></input>
+					</fiedset>
+				</form>
+			</div>
+	</body>
+
+</html>
