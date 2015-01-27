@@ -388,6 +388,7 @@ fieldset{
 	padding: 50px 80px;
 	margin-left: -230px;
 	background: url("img/bg_login.jpg") repeat scroll 50% 0px #000;
+	z-index: 100;
 }
 
 .login_popup h1{
@@ -447,7 +448,7 @@ fieldset{
 	width: 21px;
 	left: 110%;
 	text-align: right;
-	background: url(img/cross.png) no-repeat 0% 50%;
+	background: url(img/cross.png) no-repeat 0% 50% black;
 }
 
 .login_popup_error{
