@@ -5,6 +5,7 @@
 		<link type="text/css" rel="stylesheet" href="style.css"/>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
 		<title>Barbershop</title>
+		
 	</head>
 
 	<body>
@@ -14,8 +15,8 @@
 								<li><a href="http://test.ru/barbershop/" ><span class="header_menu_active">Главная</span></a></li>
 								<li><a href=""  >Информация</a></li>
 								<li><a href=""  >Новости</a></li>
-								<li><a href="prise.html"  >Прайс-лист</a></li>
-								<li><a href=""  >Магазин</a></li>
+								<li><a href="price.html"  >Прайс-лист</a></li>
+								<li><a href="shop.html"  >Магазин</a></li>
 								<li><a href=""  >Контакты</a></li>
 					</ul>
 					<div class="account_menu">
@@ -132,27 +133,31 @@
 					</div>
 					<div class="copyright">
 						Дизайн сайта:
-						<a href="" class="btn">......</a>
+						<a href="" class="btn">.......</a>
 					</div>
 				</div>
 			</div>
 			
 			<div class="login_popup">
+				<a href="#" class="login_popup_close"></a>
 				<h1>Личный кабинет</h1>
-					Введите пожалуйста свой логин и пароль
-					Если вы забыли пароль 
+					<p>Введите пожалуйста свой логин и пароль</p>
 				<form class="form" method="post" action="./auth">				
-					<fieldset>
 						<input type="text" placeholder="Логин" name="login"></input>
 						<input type="password" placeholder="Пароль" name="password"></input>
 
 						<a class="restore" hred="restore">Я забыл пароль</a>
-						<lable><input type="checkbox" name="remember">Запомнить меня</input></lable>
+						<label>
+							<input type="checkbox" name="remember"></input>
+							Запомнить меня
+						</label>
 
 						<input type="submit" value="Войти"></input>
-					</fiedset>
 				</form>
 			</div>
-	</body>
 
+	<script src="script.js"></script>
+			
+	</body>
+	
 </html>

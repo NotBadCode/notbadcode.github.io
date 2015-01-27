@@ -297,6 +297,7 @@ fieldset{
     margin:0;
     margin-bottom:15px;
 }
+
 .form input[type="text"],
 .form input[type="password"]{
     display:inline-block;
@@ -313,7 +314,6 @@ fieldset{
 .form input[type="text"]:nth-child(2n){
     margin-right:0;
 }
-
 
 /*--------------------------------------------------------*/
 
@@ -376,16 +376,95 @@ fieldset{
 	margin-top: 5px;
 }
 
+/*-----popup----------------------*/
+
 .login_popup{
 	display: none;
 	position: absolute;
-	top: 30px;
+	top: 120px;
 	left: 50%;
 	width: 300px;
 	min-height: 200px;
 	padding: 50px 80px;
 	margin-left: -230px;
 	background: url("img/bg_login.jpg") repeat scroll 50% 0px #000;
+}
+
+.login_popup h1{
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.login_popup p{
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.login_popup .form input[type="text"],
+.login_popup .form input[type="password"]{
+    display: block;
+    width: 240px;
+    margin-bottom:18px;
+    padding: 10px 40px 10px 15px;
+	border: 2px solid #000;
+	color: #000;
+	background-color: #F9F6F3;
+	text-transform: uppercase;
+}
+
+.login_popup .form input[type="text"]{
+	background: url(img/login.png) no-repeat 97% 50%;
+}
+
+.login_popup .form input[type="password"]{
+	background: url(img/password.png) no-repeat 97% 50%;
+}
+
+.login_popup input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.login_popup label{
+	cursor: pointer;
+}
+
+.login_popup .restore{
+    float: right;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 17px;
+}
+
+.login_popup_show{
+	display: block;
+	animation: login_open 0.6s;
+}
+
+.login_popup_close{
+	position: absolute;
+	height: 21px;
+	width: 21px;
+	left: 110%;
+	text-align: right;
+	background: url(img/cross.png) no-repeat 0% 50%;
+}
+
+.login_popup_error{
+    animation: login-error 0.6s;
+}
+
+@keyframes login_open{
+	0% { transform: translateY(-2000px);}
+	70% { transform: translateY(30px);}
+	90% { transform: translateY(-10px);}
+	100% { transform: translateY(0px);}
+}
+
+@keyframes login-error{
+    0%, 100%                { transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px);}
+    20%, 40%, 60%, 80%      { transform: translateX(10px);}
 }
 
 /*///////////////////////////////////////////////////////////////////////////////////////////*/
@@ -414,14 +493,16 @@ fieldset{
 }
 
 .price_title li{
-	display: inline-block;
-	padding-right: 10px;
-}
-
-.price_title li:last-child{
 	background: url("img/li.png") no-repeat 0 50%;
 	padding: 0 20px;
+	padding-right: 10px;
+	display: inline-block;
 }
+
+.price_title li:first-child{
+	background: none;
+}
+
 
 .price_btitle{
 	margin-top: 3.55em;
@@ -512,6 +593,122 @@ fieldset{
 	border: 2px solid black;
 }
 
-.price_content_right td{
+/*.price_content_right td{
 	/*text-align: center;
 }*/
+
+
+/*----SHOP--------------------------*/
+
+.main_shop{
+	
+}
+
+.main_shop:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.shop_filter{
+   float: left;
+   width: 220px;
+}
+
+.shop_filter .manufacturers{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.shop_filter .manufacturers li{
+   padding-left: 40px;
+   margin-bottom: 15px;
+   background: url(img/check_box.png) no-repeat 0 50%;
+}
+
+.shop_filter .groups{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.shop_filter .groups li{
+   display: block;
+   padding: 14px;
+   margin-bottom: 9px;
+   color: white;
+   background: black;
+   cursor: pointer;
+}
+
+.shop_filter .groups .active{
+   color: black;
+   background: white;
+}
+
+.shop_items{
+	float: right;
+   	width: 700px;
+}
+
+.shop_item{
+	display: inline-block;
+	margin: 0;
+	margin-right: 17px;
+	margin-bottom: 20px;
+   	width: 220px;
+   	background: white;
+
+}
+
+.shop_item:nth-child(3n){
+	margin-right: 0;
+}
+
+.shop_item img{
+	height: 165px;
+   	width: 220px;
+}
+
+.shop_item p{
+	margin: 14px;
+}
+
+.shop_price{
+	display: block;
+	padding: 12px;
+	margin: 0 14px;
+	margin-bottom: 16px;
+	text-align: center;
+	background: #e5e5e5;
+}
+
+.shop_price:hover{
+	color: white;
+	background: black;
+}
+
+.shop_items ul{
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.shop_items ul li{
+	display: inline-block;
+	text-align: center;
+	padding: 8px 18px;
+	margin: 0;
+	margin-right: 7px;
+	color: white;
+	border-bottom: 4px solid black;
+	background: black;
+	cursor: pointer;
+}
+
+.shop_items ul .active{
+	color: black;
+	background: white;
+}
