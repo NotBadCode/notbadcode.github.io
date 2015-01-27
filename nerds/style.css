@@ -188,7 +188,6 @@ p{
 	background-position: 100% 50%;	
 }
 
-
 .slide_text{
 	width: 480px;
 	padding: 60px 0;
@@ -380,11 +379,6 @@ p{
 	padding: 0;
 	width: 240px;
 	background: url(img/img_frame.png) no-repeat scroll;
-	opacity: 0.3;
-}
-
-.goods:hover{
-	opacity: 1;
 }
 
 .goods img{
