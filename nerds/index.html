@@ -26,22 +26,23 @@
 					
 				</div>
 
-				<div class="slider">
-					<div class="slider_controls">
-						<i class="active"></i>
-						<i></i>
-						<i></i>
-					</div>
-					<div class="slides">
-						<div class="slide">
+				<div class="container">
+
+					<input type="radio" name="slides" id="slide1" checked>
+				    <input type="radio" name="slides" id="slide2">
+				    <input type="radio" name="slides" id="slide3">
+
+					<div class="slider">
+
+						<div class="img img1">
 							<div class="slide_text">
-								<h1>Долго, дорого,<br>скурпулезно. </h1>
+								<h1>Долго, дорого,<br>скрупулезно. </h1>
 								<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
 								<a href="#" class="btn">Узнать больше</a>
 							</div>
 						</div>
 
-						<div class="slide">
+						<div class="img img2">
 							<div class="slide_text">
 								<h1>Любите ли вы математику, <br>как любим ее мы?</h1>
 								<p>Нашим дизайнерам мы удаляем нейроны, ответственные <br>за креатив, чтобы дать им возможность все просчитать</p>
@@ -49,7 +50,7 @@
 							</div>
 						</div>
 
-						<div class="slide">
+						<div class="img img3">
 							<div class="slide_text">
 								<h1>Только наркотики, <br>только хардкор!</h1>
 								<p>Все дизайнерские решения в нашей компании принимаются<br>только под воздействием качественных галлюциногенов</p>
@@ -57,6 +58,13 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="controls">
+					        <label for="slide1"></label>
+					        <label for="slide2"></label>
+					        <label for="slide3"></label>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -64,19 +72,19 @@
 		<div class="center_wraper"> 
 			<div class="services">
 				<div class="block">
-					<img src="img/service1.png">
+					<img src="img/service1.png" alt="item">
 					<h2>Веб-сайт</h2>
 					<p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
 					<a href="#" class="btn">Заказать</a>
 				</div>
 				<div class="block">
-					<img src="img/service2.png">
+					<img src="img/service2.png" alt="item">
 					<h2>Приложения</h2>
 					<p>Покорите топ-10 приложений в AppStrore и Google Play</p>
 					<a href="#" class="btn">Заказать</a>
 				</div>
 				<div class="block">
-					<img src="img/service3.png">
+					<img src="img/service3.png" alt="item">
 					<h2>Призентации</h2>
 					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
 					<a href="#" class="btn">Заказать</a>
@@ -118,24 +126,65 @@
 										<div class="toggle min_toggle"></div>
 										<div class="toggle max_toggle"></div>
 								</div>
-									<div class="prise_controls">
-										от <input class="min_price" type="text" valur="">
-										до <input class="max_price" type="text" valur="">
-									</div>
+								<div class="prise_controls">
+									от <input class="min_price" type="text" value="500">
+									до <input class="max_price" type="text" value="15000">
+								</div>
 						</div>
 					<h2>Сетка:</h2>
 					<ul class="rb">
-						<li><p>Адаптивная</p></li>
-						<li><p>Фиксированная</p></li>
-						<li><p>Резиновая</p></li>
+						<li>
+							<input id="rb1" type="radio" name="g" checked="checked">
+				            <label for="rb1">
+				                <span><span></span></span>
+				                <p>Адаптивная</p>
+				            </label>
+						</li>
+						<li>
+							<input id="rb2" type="radio" name="g">
+				            <label for="rb2">
+				                <span><span></span></span>
+				                <p>Фиксированная</p>
+				            </label>
+						</li>
+						<li>
+							<input id="rb3" type="radio" name="g">
+				            <label for="rb3">
+				                <span><span></span></span>
+				                <p>Резиновая</p>
+				            </label>
+						</li>
 					</ul>
 					<h2>Особенности:</h2>
 					<ul class="cb">
-						<li><p>Слайдер</p></li>
-						<li><p>Блок преимуществ</p></li>
-						<li><p>Новости</p></li>
-						<li><p>Галерея</p></li>
-						<li><p>Корзина</p></li>
+						<li>
+							<input id="cb1" type="checkbox" name="u" checked="checked">
+				            <label for="cb1">
+				                <span><span></span></span>
+				                <p>Слайдер</p>
+				            </label>
+						</li>
+						<li>
+							<input id="cb2" type="checkbox" name="u">
+				            <label for="cb2">
+				                <span><span></span></span>
+				                <p>Новости</p>
+				            </label>
+						</li>
+						<li>
+							<input id="cb3" type="checkbox" name="u">
+				            <label for="cb3">
+				                <span><span></span></span>
+				                <p>Галерея</p>
+				            </label>
+						</li>
+						<li>
+							<input id="cb4" type="checkbox" name="u">
+				            <label for="cb4">
+				                <span><span></span></span>
+				                <p>Корзина</p>
+				            </label>
+						</li>
 					</ul>
 				</div>	
 
@@ -210,21 +259,40 @@
 			</div>
 		</div>
 			<div class="map">
+				
 				<div class="center_wraper">
 					<div class="contacts">
+
 						<h2>NЁRDS DESIGN STUDIO</h2>
 						<p>350000, Краснодар,<br> ул. Головатого, 100</p>
 						<p>тел. +7 (861) 275-75-75</p>
-						<a href="" class="btn">Напишите нам</a>
+						
+						<label for="sendus"><div class="btn">Напишите нам</div></label>
+						
+					</div>
+					<input type="checkbox" id="sendus">
+					<div class="popup">	
+						
+						<form class="form" method="post" action="./auth">		
+							<p>Ваше имя:</p>	<p>Ваш e-mail:</p>	<br>
+							<input type="text" placeholder="Представьтесь, пожалуйста" name="login">
+							<input type="text" placeholder="Для отправки ответа" name="email"><br>
+							<p>Текст письма:</p><br>
+							<input type="text" placeholder="В свободной форме" name="send"><br>
+
+							<input class="btn" type="submit" value="Отправить">
+							<label for="sendus"><div class="btn">Отмена</div></label>
+						</form>
 					</div>
 				</div>
+				
 			</div>
 		<div class="center_wraper">	
 			<div class="footer">
 					<ul class="contacts">
-						<li><a href="vk.com"><img src="img/vk.png" alt="vk.com"></a></li>
-						<li><a href="facebook.com"><img src="img/facebook.png" alt="facebook.com"></a></li>
-						<li><a href="instagram.com"><img src="img/instagram.png" alt="instagram.com"></a></li>
+						<li><a href="http://vk.com"><img src="img/vk.png" alt="vk.com"></a></li>
+						<li><a href="http://facebook.com"><img src="img/facebook.png" alt="facebook.com"></a></li>
+						<li><a href="http://instagram.com"><img src="img/instagram.png" alt="instagram.com"></a></li>
 					</ul>
 					<div class="footer_text">
 						<h1>Давайте дружить, это выгодно!</h1>
@@ -232,5 +300,7 @@
 					</div>
 			</div>
 		</div>
+
+		
 	</body>
 </html>

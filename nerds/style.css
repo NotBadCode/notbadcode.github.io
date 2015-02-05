@@ -64,6 +64,7 @@ p{
 	color:  #ffffff;
 	background: #fb565a;
 	border-radius: 2px;
+	cursor: pointer;
 }
 
 .btn:hover{
@@ -77,6 +78,7 @@ p{
 	margin: 0;
 	padding: 0;
 	background: #eeeeee;	
+
 }
 
 .header_navbar{
@@ -84,6 +86,7 @@ p{
 	background: url("img/logo.png") no-repeat scroll 0 27px;
 	text-transform: uppercase;
 	font-weight: bold;
+	
 }
 
 .header_navbar:after{
@@ -122,70 +125,93 @@ p{
 
 /*----SLIDER-------------------------------------------------------------------------*/
 
-.slider{
-	position: relative;
-	margin: 56px 0;
-	width: 100%;
-	height: 352px;
+.container {
+  position: relative;
+  height: 350px;
+  width: 880px;
+  margin: 0 auto;
 }
 
-.slider_controls{
+.container > input { display: none }
+
+.slider, .img {
+  width: inherit;
+  height: inherit;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  background-color: #eeeeee;
+}
+
+.img{
 	position: absolute;
-	bottom: 90px;
-	left: 50%;
-	margin-left: -100px;
-	width: 200px;
-	height: 10px;
-	text-align: center;
-	z-index: 100; 
 }
 
-.slider_controls i{
-	display: inline-block;
-	width: 4px;
-	height: 4px;
-	margin: 0 3px;
-	background: white;
-	border: 3px solid white;
-	vertical-align: top;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.slider_controls .active{
-	background: #c1c1c1;
-}
-
-.slide{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	background-repeat: no-repeat;
-	background-position: 100% 50%;
-}
-
-.slide:nth-child(1){
-	/*display: none;*/
+.img1{
+	display: none;
 	background: url(img/bg_slide1.png);	
 	background-repeat: no-repeat;
 	background-position: 100% 50%;
 }
 
-.slide:nth-child(2){
+.img2{
 	display: none;
 	background: url(img/bg_slide2.png);	
 	background-repeat: no-repeat;
 	background-position: 100% 50%;
 }
 
-.slide:nth-child(3){
+.img3{
 	display: none;
 	background: url(img/bg_slide3.png);
 	background-repeat: no-repeat;
 	background-position: 100% 50%;	
+}
+
+#slide1:checked ~ .slider .img1{
+  	display: block;
+  	animation:  scroll_slide_prev 0.6s;
+}
+
+#slide2:checked ~ .slider .img2{
+  	display: block;
+  	animation:  scroll_slide_next 0.6s;
+}
+
+#slide3:checked ~ .slider .img3{
+  	display: block;
+  	animation:  scroll_slide_next 0.6s;
+}
+
+.controls {
+  	position: absolute;
+	bottom: 90px;
+	left: 50%;
+	margin-left: -100px;
+	width: 200px;
+	height: 10px;
+	text-align: center;
+	z-index: 100;
+}
+
+.controls label {
+	display: inline-block;
+    width: 4px;
+	height: 4px;
+	margin: 0px 3px;
+	background: #ffffff;
+	border: 3px solid #ffffff;
+	vertical-align: top;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3){
+  background: red;
 }
 
 .slide_text{
@@ -196,6 +222,21 @@ p{
 .slide_text .btn{
 	width: 240px;
 	margin-top: 33px;
+}
+
+
+@keyframes scroll_slide_next{
+	0% { transform: translateX(-2000px);}
+	70% { transform: translateX(30px);}
+	90% { transform: translateX(-10px);}
+	100% { transform: translateX(0px);}
+}
+
+@keyframes scroll_slide_prev{
+	0% { transform: translateX(2000px);}
+	70% { transform: translateX(-30px);}
+	90% { transform: translateX(10px);}
+	100% { transform: translateX(0px);}
 }
 
 /*----SERVICES-------------------------------------------------------------------------*/
@@ -331,17 +372,109 @@ p{
 }
 
 .shop_left ul li{
-	padding-left: 33px;
 	position: relative;
 }
 
-.cb li{
-	background: url(img/cb.png) no-repeat scroll 0 1px;
+
+/*----Radio--------------------------------------------------------------------------*/
+
+.rb li {
+    position: relative;
+    list-style: none;
+    padding-bottom: 15px;
+    color: #283136;
+    font-weight: 300;
+    cursor: pointer;
 }
 
-.rb li{
-	background: url(img/rb.png) no-repeat scroll 0 1px;
+.rb{
+	padding: 0;
+	margin: 0;
 }
+
+.rb p{
+	display: inline-block;
+}
+
+.rb input[type="radio"] {
+  display: none;
+}
+
+
+.rb input[type="radio"] + label > span {
+  position: relative;
+  display: inline-block;
+  margin-right: 11px; 
+  width: 18px;
+  height: 18px;
+  border: 4px solid #d7dcde;
+  border-radius: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+.rb input[type="radio"]:checked + label > span span {
+	position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    left: 5px;
+    top: 5px;
+    border-radius: 8px;
+    border: none;
+    background: #d7dcde;
+}
+
+/*----Check--------------------------------------------------------------------------*/
+
+.cb li {
+    position: relative;
+    list-style: none;
+    padding-bottom: 15px;
+    color: #283136;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cb{
+	padding: 0;
+	margin: 0;
+}
+
+.cb p{
+	display: inline-block;
+}
+
+.cb input[type="checkbox"] {
+  display: none;
+}
+
+
+.cb input[type="checkbox"] + label > span {
+  position: relative;
+  display: inline-block;
+  margin-right: 11px; 
+  height: 24px;
+  width: 24px;
+  border-radius: 4px;
+  background: #d7dcde;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.cb input[type="checkbox"]:checked + label > span span {
+	position: absolute;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    left: 5px;
+    top: 5px;
+    color: black;
+    background: red;
+}
+
+/*----Shop--------------------------------------------------------------------------*/
 
 .shop_right{
 	float: right;
@@ -542,6 +675,85 @@ p{
 	width: 195px;
 }
 
+input[type="checkbox"]{ 
+	display: none ;
+}
+
+.popup{
+	display: none;
+	position: absolute;
+	top: 15px;
+	left: 315px;
+	padding: 50px 80px; 
+	background: #ffffff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.popup p{
+	display: inline-block;
+	color: black;
+}
+
+.popup p:first-child{
+	margin-right: 194px;
+}
+
+.popup input[type="text"]{
+	width: 220px;
+	padding: 11px 14px;
+	font-size: 12px;
+	line-height: 18px;
+	color: black;
+	border: 2px solid #d7dcde;
+	border-radius: 4px;
+}
+
+.popup form{
+	display: inline-block;
+	width: 550px;
+}
+
+.popup input[name="login"]{
+	margin-right: 20px;
+}
+
+.popup input[name="send"]{
+	margin-bottom: 48px;
+}
+
+.popup input[name="send"]{
+	width: 500px;
+	height: 110px;
+	margin-bottom: 48px;
+}
+
+.popup input[type="submit"]{
+	margin-right: 20px;
+	border: none;
+	display: inline-block;
+	width: 140px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color:  #ffffff;
+	background: #fb565a;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.popup .btn:last-child{
+	border: none;
+	color:  black;
+	background: #f1f1f1;
+}
+
+#sendus:checked ~ .popup{
+  	display: block;
+}
+
 
 /*----FOOTER--------------------------------------------------------------------------*/
 
@@ -573,3 +785,4 @@ p{
 .footer_text{
 	display: inline-block;
 }
+
