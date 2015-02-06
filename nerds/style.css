@@ -385,6 +385,7 @@ p{
 .shop_left{
 	display: inline-block;
 	float: left;
+	width: 240px;
 }
 
 .shop_left ul{
