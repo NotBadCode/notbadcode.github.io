@@ -48,7 +48,8 @@ p{
 	font-size: 16px;
 	line-height: 22px;
 	color: #283136;
-	font-weight: 300;
+	white-space: normal;
+	font-weight: 200;
 }
 
 .btn{
@@ -171,19 +172,16 @@ p{
 
 #slide1:checked ~ .slider .img1{
   	display: block;
-  	-webkit-animation:  scroll_slide_prev 0.6s;
   	animation:  scroll_slide_prev 0.6s;
 }
 
 #slide2:checked ~ .slider .img2{
   	display: block;
-  	-webkit-animation:  scroll_slide_next 0.6s;
   	animation:  scroll_slide_next 0.6s;
 }
 
 #slide3:checked ~ .slider .img3{
   	display: block;
-  	-webkit-animation:  scroll_slide_next 0.6s;
   	animation:  scroll_slide_next 0.6s;
 }
 
@@ -241,20 +239,6 @@ p{
 	100% { transform: translateX(0px);}
 }
 
-@-webkit-keyframes scroll_slide_next{
-	0% { transform: translateX(-2000px);}
-	70% { transform: translateX(30px);}
-	90% { transform: translateX(-10px);}
-	100% { transform: translateX(0px);}
-}
-
-@-webkit-keyframes scroll_slide_prev{
-	0% { transform: translateX(2000px);}
-	70% { transform: translateX(-30px);}
-	90% { transform: translateX(10px);}
-	100% { transform: translateX(0px);}
-}
-
 /*----SERVICES-------------------------------------------------------------------------*/
 
 .services{
@@ -267,9 +251,7 @@ p{
 	display: inline-block;
 	margin-top: 80px;
 	width: 240px;
-
 }
-
 
 .services .block:nth-child(2){
 	margin: 0 80px;
@@ -351,6 +333,7 @@ p{
 }
 
 .sites_logo img{
+	padding: 0 21px;
 	opacity: 0.4;
 }
 
@@ -360,10 +343,6 @@ p{
 
 .sites_logo:nth-child(2){
 	padding: 0 80px;
-}
-
-.sites_logo:nth-child(3) img{
-	vertical-align: bottom;
 }
 
 /*----SHOP--------------------------------------------------------------------------*/
@@ -383,7 +362,6 @@ p{
 }
 
 .shop_left{
-	display: inline-block;
 	float: left;
 }
 
@@ -396,7 +374,6 @@ p{
 .shop_left ul li{
 	position: relative;
 }
-
 
 
 /*----Radio--------------------------------------------------------------------------*/
@@ -491,11 +468,10 @@ p{
     display: inline-block;
     width: 8px;
     height: 8px;
-    left: 8px;
-    top: 8px;
+    left: 5px;
+    top: 5px;
     color: black;
-    background: black;
-    border-radius: 8px;
+    background: red;
 }
 
 /*----Shop--------------------------------------------------------------------------*/
@@ -536,14 +512,15 @@ p{
 	padding: 0;
 	width: 240px;
 	background: url(img/img_frame.png) no-repeat scroll;
-	float: left;
 }
 
 .goods img{
+
 	margin-top: 30px;
 	width: 240px;
 	height: 240px;
 	background: #fb565a;
+
 }
 
 .goods_price{
@@ -580,7 +557,6 @@ p{
 }
 
 .nav_btns{
-	float: left;
 }
 
 .nav_btn{
@@ -683,9 +659,8 @@ p{
 }
 
 .contacts{
-	position: absolute;
-	top: 87px;
-	left: 200px;
+	display: inline-block;
+	margin-top: 88px;
 	padding: 33px 20px;
 	background: #ffffff;
 }
