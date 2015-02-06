@@ -789,26 +789,48 @@ input[type="checkbox"]{
 	clear: both;
 }
 
-.footer ul{
-	display: inline-block;
+.soc{
 	margin: 0;
 	padding: 0;
+	float: left;
 	margin-top: 77px;
 	margin-bottom: 77px;
 	list-style: none;
 }
 
-.footer ul li{
-	display: inline-block;
-	margin-right: 27px;
-	opacity: 0.2;
+.soc li{
+	display: inline-block;	
 }
 
-.footer ul li:hover{
-	opacity: 1;
+.soc a{
+	display: inline-block;
+	width: 62px;
+	height: 62px;
+	margin-right: 27px;
+	border-radius: 50px;
+	background-color: #F1F1F1;
 }
+
+.soc li:nth-child(1) a{
+	background: url("img/vk.png") no-repeat 24px 23px #F1F1F1;
+}
+
+.soc li:nth-child(2) a{
+	background: url("img/facebook.png") no-repeat 25px 20px #F1F1F1;
+}
+
+.soc li:nth-child(3) a{
+	background: url("img/instagram.png") no-repeat 22px 22px #F1F1F1;
+}
+
+.soc li a:hover{
+	background-color: #fb565a;
+}
+
 
 .footer_text{
+	margin-top: 77px;
 	display: inline-block;
+	float: right;
 }
 
