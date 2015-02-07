@@ -2,9 +2,33 @@
 <html lang="ru-RU">
 	<head>
 		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="style.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Roboto&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<title>Nerds</title>
+		
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+		<script>
+		  $(function() {
+		    $( "#slider-range" ).slider({
+		      range: true,
+		      min: 0,
+		      max: 10000,
+		      step: 500,
+		      values: [ 0, 2000 ],
+		     stop: function(event, ui) {
+				jQuery("input#minCost").val(jQuery("#slider-range").slider("values",0));
+				jQuery("input#maxCost").val(jQuery("#slider-range").slider("values",1));
+		    },
+		    slide: function(event, ui){
+				jQuery("input#minCost").val(jQuery("#slider-range").slider("values",0));
+				jQuery("input#maxCost").val(jQuery("#slider-range").slider("values",1));
+		    }							
+			});
+		  });
+ 		</script>
+
 	</head>
 	<body>
 
@@ -120,17 +144,15 @@
 			<div class="shop">
 				<div class="shop_left">
 					<h2> Стоимость: </h2>
-						<div class="range_filter">
-								<div class="range_controls">
-										<div class="scale"><div style="width:70%" class="bar"></div></div>
-										<div class="toggle min_toggle"></div>
-										<div class="toggle max_toggle"></div>
-								</div>
-								<div class="prise_controls">
-									от <input class="min_price" type="text" value="500">
-									до <input class="max_price" type="text" value="15000">
-								</div>
+
+						<div class="scrol_cont">
+							<div id="slider-range"></div>
 						</div>
+						<label class="label" for="minCost">ОТ</label>
+						<input type="text" id="minCost" value="0"/>
+						<label for="maxCost">ДО</label>
+						<input label="ДО" type="text" id="maxCost" value="2000"/>
+
 					<h2>Сетка:</h2>
 					<ul class="rb">
 						<li>
@@ -301,6 +323,6 @@
 			</footer>
 		</div>
 
-		
+		<script src='script.js'></script>	
 	</body>
 </html>

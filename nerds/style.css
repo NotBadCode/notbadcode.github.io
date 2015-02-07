@@ -604,74 +604,72 @@ p{
 }
 
 
-.range_filter{
-    width: 240px;
-    margin: 50px 0;
-    float: left;
+/*-----------------------------*/
+
+#slider-range {
+  position: relative;
+    width: 190px;
+    top: 38px;
+  left: 25px;
+}
+label{
+  color: #283136;
+}
+.scrol_cont{
+  width: 240px;
+  height: 80px;
+  background-color: #f1f1f1;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+#minCost, #maxCost{
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  border: none;
+  background: #f1f1f1;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300px;
+  font-style: normal;
+  text-align: center;
+  color: #283136;
+  border-radius: 5px;
+  white-space: nowrap;
+  
+}
+#minCost{
+  margin-right: 11px;
 }
 
-.range_controls{
+.ui-slider {
     position: relative;
-    height: 80px;
-    margin-bottom: 15px;
-    padding: 0 30px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    overflow: hidden;
 }
 
-.range_controls .scale{
-    margin-top: 30px;
-    height: 2px;
-    background: #d7dcde;
+.ui-slider .ui-slider-handle{
+  background-image: none;
+  top: -8px;
+  width:  4px;
+  height: 4px;
+  border: 8px solid white;
+  border-radius: 50%; 
+  background: #ababab;
+  box-shadow: 0 3px 1px 0 #cfcfcf;
+  cursor: pointer;
 }
 
-.range_controls .bar{
-    height: 2px;
-    background: red;
+.ui-widget-header {
+  background-image: none;
+  background: #00CA74;
 }
 
-.range_controls .toggle{
-    position: absolute;
-    top:  22px;
-    left: 30px;
-    width:  4px;
+.ui-widget-content {
     height: 4px;
-    border: 8px solid white;
-    border-radius: 50%; 
-    background: #ababab;
-    box-shadow: 0 3px 1px 0 #cfcfcf;
-    cursor: pointer;
 }
 
-.range_controls .min_toggle{
-	left: 30px;
-}
-
-.range_controls .max_toggle{
-	left: 145px;
-}
-
-
-.prise_controls input{
-	width: 60px;
-	padding: 8px 10px;
-	margin-left: 10px;
-	border: none;
-	background: #f1f1f1;
-
-	font-size: 16px;
-	font-family: "Roboto", sans-serif;
-	font-weight: 300px;
-	font-style: normal;
-	text-align: center;
-	color: #283136;
-	border-radius: 5px;
-	white-space: nowrap;
-}
-
-.prise_controls .min_price{
-	margin-right: 18px;
+.ui-slider-handle:last-child{
+	left: 20%;
 }
 
 /*----MAP--------------------------------------------------------------------------*/
@@ -680,6 +678,7 @@ p{
 	position: relative;
 	margin: 0 auto;
 	height: 416px;
+	width: 1280px;
 	background: url(img/map.png) no-repeat scroll;
 }
 
@@ -687,6 +686,7 @@ p{
 	position: absolute;
 	top: 87px;
 	left: 200px;
+	float: left;
 	padding: 33px 20px;
 	background: #ffffff;
 }
