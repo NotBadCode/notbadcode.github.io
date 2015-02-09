@@ -106,6 +106,10 @@ p{
 	margin-right: 44px;
 }
 
+.header_navbar ul li:hover{
+	border-bottom: 2px solid red;
+}
+
 .header_navbar ul li:last-child{
 	margin-right: 67px;
 }
@@ -662,10 +666,13 @@ label{
 .ui-widget-header {
   background-image: none;
   background: #00CA74;
+
 }
 
 .ui-widget-content {
     height: 4px;
+    border: 1px solid #D4D4D4;
+	background: #D7DCDE;
 }
 
 .ui-slider-handle:last-child{

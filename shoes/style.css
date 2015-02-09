@@ -1,0 +1,405 @@
+/*SHOUSE*/
+
+html, body{
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+body{
+	font-family: "Grumpy", sans-serif;
+	background: #f2f2f2;
+}
+
+a{
+	text-decoration: none;
+}
+
+.center_wraper{
+	width: 60.625rem;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/*---HEADER---*/
+
+header{
+	margin-top: 2.875rem;
+}
+
+header:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header img{
+	vertical-align: bottom;
+}
+
+.contacts{
+	display: inline-block;
+	float: right;
+}
+
+.contacts a{
+	display: inline-block;
+	font-size: 0.75rem;
+	color: #4d4d4d;
+	text-decoration: none;
+}
+
+.contacts a:nth-child(1){
+	padding-left: 1.5rem;
+	background: url("img/phone.png") no-repeat 0 50%;
+}
+
+.contacts a:nth-child(2){
+	padding-left: 1.5rem;
+	margin-left: 1.5rem;
+	background: url("img/mail.png") no-repeat 0 50%;
+}
+
+.login{
+	display: inline-block;
+	margin-top: 1rem;
+	padding: 0.3125rem;	
+	background: #f1f1f1;
+	border: 1px solid #f9f9f9;
+	border-radius: 3px;
+}
+
+.login a:nth-child(1){
+	padding: 0.6rem 1.5rem;	
+	height: 16px;
+	width: 17px;
+	background: url("img/cart.png") no-repeat 40% 50%;
+	border-right: 1px solid #e0e0e0;
+}
+
+
+.login a:nth-child(2){	
+	margin: 0rem 1.25rem;
+	padding: 0;
+	font-size: 0.875rem;
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	background: none;
+}
+
+.login a:nth-child(3){	
+	margin: 0.5rem 0;
+}
+
+a.btn{
+	display: inline-block;
+	padding: 0.875rem 1.875rem ;
+	padding-right: 1.25rem;
+	font-size: 1.1875rem;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	background: #ed2c23;
+	border-radius: 4px;
+}
+
+/*---NAV---*/
+
+nav{
+	margin-top: 1.875rem;
+	margin-bottom: -1.25rem;
+	padding: 1rem ;
+	background-color: #f7f7f7;
+	border: #e6e6eb;
+}
+
+nav a{
+	padding: 0.625rem 1.5rem;
+	/*font-size: 1.5rem;*/
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #444444;
+	border-right: 2px solid #cfc8bc;
+}
+
+nav a:nth-child(5){
+	border-right: none;
+}
+
+nav input[type="text"]{
+    outline: none;
+    display: inline-block;
+    height: 24px;
+    width: 200px; 
+    padding-left: 25px;
+    background: url("img/search.png") no-repeat 5px 50% #f5f5f5;
+    border: 1px solid #cfc8bc;
+    border-radius: 50px;
+} 
+
+/*---SLIDER---*/
+
+.slider{
+	margin: 0 auto;
+	position: relative;
+	z-index: -2;
+	height: 42.25rem;
+	width: 100rem;
+	background: #9ccd8d;
+}
+
+.slider:after{
+	content: "";
+	position: absolute;
+	top: 44%;
+	left: 62px;
+	width: 87px;
+	height: 87px;
+	background: url(img/slider_left.png) no-repeat;
+}
+
+.slider:before{
+	content: "";
+	position: absolute;
+	top: 44%;
+	right: 62px;
+	width: 87px;
+	height: 87px;
+	background: url(img/slider_right.png) no-repeat;
+}
+
+.slider_item{
+	position: absolute;
+	left: 20rem;
+	z-index: -1;
+}
+
+
+
+/*---CATEGORIES---*/
+
+.categories{
+	margin: 0 auto;
+	margin-top: -3.75rem;
+}
+
+.categories_item{
+	display: inline-block;
+	width: 20rem;
+	text-align: center;
+	background: #fdfefd;
+	border-radius: 2px;
+}
+
+.categories_item h2{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	font-size: 2.52875rem;
+	font-weight: normal;
+	color: black;
+}
+
+.categories_item h3{
+	margin: 0;
+	padding: 0;
+	font-size: 1.599375rem;
+	color: #f2262c;
+}
+
+.categories_item p{
+	position: relative;
+	font-size: 0.948125rem;
+	margin: 0;
+	margin-bottom: 2.125rem;
+	color: black;
+}
+
+.image_wraper{
+	position: relative;
+	display: inline-block;
+	width: 173px;
+	height: 173px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.categories a:nth-child(1) img{
+	position: absolute;
+	left: -10px;
+	top: -80px;
+}
+
+.categories a:nth-child(2) img{
+	position: absolute;
+	left: -235px;
+	top: 0px;
+}
+
+.categories a:nth-child(3) img{
+	position: absolute;
+	left: -10px;
+	top: -18px;
+}
+
+
+.categories_item p:after{
+	content: "";
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -7px;
+	width: 15px;
+	height: 12px;
+	background: url("img/list.png");
+}
+
+/*---PRODUCTS---*/
+
+.products{
+	margin-top: 1.8125rem;
+	padding: 1.875rem 0.8125rem;
+	text-align: center;
+	background: #ffffff;
+	border-radius: 3px;
+}
+
+.products:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.products_title:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.products_title span{
+	float: left;
+	margin-bottom: 1rem;
+	font-size: 1.490625rem;
+	font-weight: bold;
+
+}
+
+.products_title .red_title{
+	margin-left: 0.5625rem;
+	color: #f2262c;
+}
+
+.products_title a{
+	margin-top: 0.5rem;
+	padding-left: 12px;
+	float: right;
+	font-family: Arial, sans-serif;
+	font-size: 0.875rem;
+	font-style: italic;
+	text-decoration: none;
+	color: #4c4b4b;
+	background: url("img/arrow.png") no-repeat 0 60%;
+}
+
+
+.product{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		     box-sizin: border-box;
+	display: inline-block;
+	margin: 0;
+	margin-bottom: 0.75rem;
+	padding: 1rem;
+	max-height: 20.625rem;
+	width: 14.375rem;
+	text-align: center;
+	border: 1px solid #eaeaea;
+	border-radius: 3px;	
+}
+
+.product img{
+	width: 12.375rem;
+	border-bottom: 1px solid #e1e0df;
+}
+
+.product:hover{
+	border: 6px solid #fe3026;
+}
+
+/*---FOOTER---*/
+
+footer{
+	margin-top: 5.9375rem;
+	padding: 2.5rem 0;
+	/*width:  100%;*/
+	color: white;
+	background: #f2262c;
+}
+
+footer span{
+	font-size: 1.766875rem;
+}
+
+footer:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.footer_nav{
+	display: inline-block;
+	margin: 0;
+	margin-left: 0.7rem;
+	padding: 0;
+	list-style: none;
+}
+
+.footer_nav li{
+	display: inline-block;
+	border-right: 1px solid white;
+}
+
+.footer_nav li a{
+	padding: 0 0.625rem;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+
+}
+
+.footer_nav li:last-child{
+	border-right: none;
+}
+
+.soc{
+	display: inline-block;
+	float: right;	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.soc li{
+	display: inline-block;
+	border-radius: 2px;
+}
+
+.soc li a{
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+
+.soc li:nth-child(1){
+	background: url(img/p.png) no-repeat 50% 50% white;
+}
+
+.soc li:nth-child(2){
+	background: url(img/twiter.png) no-repeat 50% 50% white;
+}
+
+.soc li:nth-child(3){
+	background: url(img/facebook.png) no-repeat 50% 50% white;	
+}
