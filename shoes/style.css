@@ -323,8 +323,27 @@ nav input[type="text"]{
 	border-bottom: 1px solid #e1e0df;
 }
 
+.product p{
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 2.5rem;
+	max-width: 9.375rem;
+	width: 9.375rem;
+}
+
+.get_btn{
+	display: inline-block;
+	width: 11rem;
+	height: 2rem;
+	background: url("img/bg_btn.png") no-repeat;
+	cursor: pointer;
+}
+
 .product:hover{
-	border: 6px solid #fe3026;
+	/*border: 6px solid #fe3026;*/
+	box-shadow: inset  0 0 0 6px red;
+
 }
 
 /*---FOOTER---*/
