@@ -34,7 +34,7 @@ header:after{
 }
 
 header img{
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 .contacts{
@@ -75,6 +75,7 @@ header img{
 	width: 17px;
 	background: url("img/cart.png") no-repeat 40% 50%;
 	border-right: 1px solid #e0e0e0;
+	vertical-align: middle;
 }
 
 
@@ -175,7 +176,6 @@ nav input[type="text"]{
 	left: 20rem;
 	z-index: -1;
 }
-
 
 
 /*---CATEGORIES---*/
@@ -334,10 +334,36 @@ nav input[type="text"]{
 
 .get_btn{
 	display: inline-block;
+	padding-left: 0.8rem;
+	padding-top: 0.2rem;
 	width: 11rem;
 	height: 2rem;
+	text-align: left;
 	background: url("img/bg_btn.png") no-repeat;
-	cursor: pointer;
+}
+
+
+.get_btn span{
+	font-size: 0.6875rem;
+	font-weight: bold;
+	color: white;
+}
+
+/*.get_btn a{
+	display: inline-block;
+	padding: 0.4rem 0.5rem;
+	font-size: 0.875rem;
+	color: white;
+	text-decoration: none;
+	vertical-align: middle;
+}*/
+
+.get_btn a{
+	display: inline-block;
+	width: 6.8125rem;
+	height: 1.50rem;
+	margin-left: 0.7rem;
+	vertical-align: middle;
 }
 
 .product:hover{
