@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(img/bg.jpeg) repeat scroll ;
+    background: black ;
     color: orange;
 }
 
@@ -46,43 +46,3 @@ p{
     padding: 5px 10px;
     border-radius: 3px;
 }
-
-.range_filter{
-    width: 240px;
-    margin: 50px auto;
-}
-
-.range_controls{
-    position: relative;
-    height: 80px;
-    margin-bottom: 15px;
-    padding: 0 30px;
-    background: #f1f1f1;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.range_controls .scale{
-    margin-top: 30px;
-    height: 2px;
-    background: #d7dcde;
-}
-
-.range_controls .bar{
-    height: 2px;
-    background: red;
-}
-
-.range_controls .toggle{
-    position: absolute;
-    top:  22px;
-    left: 30px;
-    width:  4px;
-    height: 4px;
-    border: 8px solid white;
-    border-radius: 50%; 
-    background: #ababab;
-    box-shadow: 0 3px 1px 0 #cfcfcf;
-    cursor: pointer;
-}
-

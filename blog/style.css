@@ -139,7 +139,6 @@ a:hover{
 }
 
 .header_title{
-    float: left;
     height: 42px;
     width: 422px;
     margin-top: 58px;
@@ -158,39 +157,72 @@ a:hover{
 
 .slider{
     position: relative;
-    display: inline-block;
     margin: 0 auto;
     width: 896px;
     height: 239px;
     background: #1a1e27;
 }
 
-.slider .title{
+.slide{
+    width: 576px;
+    background: url(img/slide1) no-repeat 0 50%;
+}
+
+.slider:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.slider_controls{
     float: right;
     color: white;
-    margin-right: 15px;
-    margin-left: 615px;
+    margin: 0;
+    width: 320px;
+    margin: 0 15px;
+    
 }
 
-.slider .title h3 {
-    font-size: 30px;
-    margin-bottom: 7px;
-    padding: 21px 14px 0px;
+.slider_container{
+    /*width: 600px; */ 
 }
 
-.slider .title p {
+.slider_title{
+    display: inline-block;
+    padding: 20px 14px;
     border-bottom: 1px solid #393939;
-    padding: 0px 14px 16px;
 }
 
-.slider .container{
-    width: 600px;
-   
+.slider_title h1 {
+    font-size: 30px;
+    margin: 10px 0;
 }
-.slider .controls{
-    position: absolute;
-   
+
+.slider_title p {
+    margin: 0;
 }
+
+.slider_controls_item{
+    display: inline-block;
+    margin: 20px 14px; 
+    background: #d0d0d0;
+    border-radius: 1px;
+     opacity: 0.5;
+}
+
+.slider_controls_item img{
+    width: 70px;
+    height: 60px;
+}
+
+.slider_controls_item:nth-child(3){
+    margin: 20px 20px;
+}
+
+.slider_controls .active{
+    opacity: 1;
+}
+
 /*------------------------------------------------------------------------------*/
 
 .main{
