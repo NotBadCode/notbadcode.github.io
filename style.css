@@ -26,3 +26,6 @@ table tbody td {
 table thead td, tbody td:first-child {
     font-size: 14px;
 }
+ul {
+  list-style: none;
+}

@@ -11,7 +11,8 @@
           crossorigin="anonymous">
     <link href="style.css"
           rel="stylesheet">
-    <title>Document</title>
+    <link rel="icon" href="favicon.ico">
+    <title>NotBadCode</title>
 </head>
 <body>
 
@@ -38,16 +39,27 @@
         </div>
     </div>
     <div class="row">
+      <div class="col">
+        <div class="eng lang-block">
+          <button type="button" class="btn btn-success"></button> - my level
+        </div>
+        <div class="rus hidden lang-block">
+          <button type="button" class="btn btn-success"></button> - мой уровень
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
         <div class="col">
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#experience" role="tab">
+                    <a class="nav-link  active" data-toggle="tab" href="#experience" role="tab">
                         <div class="eng lang-block">Experience</div>
                         <div class="rus hidden lang-block">Опыт</div>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#computer-science" role="tab">
+                    <a class="nav-link" data-toggle="tab" href="#computer-science" role="tab">
                         <div class="eng lang-block">Computer Science</div>
                         <div class="rus hidden lang-block">Теория</div>
                     </a>
@@ -73,7 +85,7 @@
             </ul>
             <table class="table megatable table-responsive table-bordered style-table tab-content">
                 <thead class="thead-inverse">
-                <tr class="headers">
+                  <tr class="headers">
                     <td></td>
                     <td>
                         <div class="eng lang-block">
@@ -125,7 +137,7 @@
                     </td>
                 </tr>
                 </thead>
-                <tbody id="experience" class="tab-pane fade">
+                <tbody id="experience" class="tab-pane in active show">
                 <tr>
                     <td>
                         <div class="eng lang-block">Languages with professional experience</div>
@@ -203,6 +215,19 @@
                         </div>
                     </td>
                     <td>
+                      <strong>Languages:</strong>
+                      <ul>
+                          <li>PHP</li>
+                          <li>JavaScript</li>
+                          <li>Ruby</li>
+                          <li>C/C++</li>
+                      </ul>
+                      <strong>Databases:</strong>
+                      <ul>
+                          <li>MySql</li>
+                          <li>PostgreSQL</li>
+                          <li>MongoDB</li>
+                      </ul>
                     </td>
                 </tr>
                 <tr>
@@ -320,7 +345,7 @@
                     </td>
                 </tr>
                 </tbody>
-                <tbody id="computer-science" class="tab-pane in active show">
+                <tbody id="computer-science" class="tab-pane fade">
                 <tr>
                     <td>
                         <div class="eng lang-block">Data structures</div>
@@ -629,8 +654,8 @@
                         </div>
                     </td>
                     <td>
-                        <strong>PhpUnit</strong>
-                        <strong>RSpec</strong>
+                        <strong>PhpUnit</strong><br>
+                        <strong>RSpec</strong><br>
                     </td>
                 </tr>
                 </tbody>
@@ -789,16 +814,7 @@
                             understand what the intent of the communication was.
                         </div>
                         <div class="rus hidden lang-block">
-                            Этот пункт об английском языке. <br>
-                            Важность этого критерия для программиста часто
-                            недооценивают. С
-                            увеличением аутсорсинга разработки ПО в те страны, где
-                            английский не является родным языком, этот вопрос стал
-                            более
-                            актуальным. Я знаю несколько проектов, которые
-                            провалились
-                            потому, что программисты не могли понять смысл
-                            обсуждения.
+                            Этот пункт об английском языке.
                         </div>
                     </td>
                 </tr>
@@ -1135,16 +1151,7 @@
                                                            часто восполняют пробелы в API.
                         </div>
                     </td>
-                    <td>
-                        <div class="eng lang-block">E.g. of API can be Java library, .net framework or the
-                                                    custom
-                                                    API for the application
-                        </div>
-                        <div class="rus hidden lang-block">Примером API может быть Java-библиотека, .Net фреймворк
-                                                           или API
-                                                           какого-либо приложения.
-                        </div>
-                    </td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
