@@ -1,48 +1,28 @@
-body{
-    margin: 0;
-    padding: 0;
-    background: black ;
-    color: orange;
+.megatable.tab-content > .active {
+    display: table-row-group !important;
 }
-
-h4{
-	margin-left: 5px;
-	margin-bottom: 15px;
-	font-family: Verdana, sans-serif;
+.hidden {
+    display: none;
 }
-
-p{
-	margin-left: 15px;
-}
-
-.header,.footer{
-    border-radius:5px;
-    color:orange;
-    border-bottom: 2px solid orange;
-    text-align: center;
-    text-transform: uppercase;
+.switch-lang.active {
+    color: black;
     font-weight: bold;
 }
-
-.main{
-    border-radius:5px;
+.settings {
+    justify-content: space-between;
+    align-items: center;
 }
-
-.main ul{
-    list-style: none;
+.settings .hint{
+    text-align: right;
 }
-
-.main ul li{
-    display: inline-block;
-    margin-right: 20px;
+.links {
+    margin-top: 20px;
+    font-size: 10px;
 }
-
-.main ul li a{
-    text-decoration: none;
-    color: #e75230;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: #832c1a;
-    padding: 5px 10px;
-    border-radius: 3px;
+table tbody td {
+    border: 1px solid #eceeef;
+    font-size: 12px;
+}
+table thead td, tbody td:first-child {
+    font-size: 14px;
 }

@@ -1,17 +1,1678 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link type="text/css" rel="stylesheet" href="style.css"/>
-		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
-		<title>Test</title>
-	</head>
-	<body>
-	    <div class="main">
-		<h4>Projects</h4>
-			<ul>
-				<li><a href="barbershop/"> Barbershop </a></li>
-				<li><a href="nerds/"> Nerds </a></li>
-			</ul>
-		</div>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+          crossorigin="anonymous">
+    <link href="style.css"
+          rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row settings">
+                <div class="col-2">
+                    <a class="switch-lang active" data-lang='eng' href="#">English</a>
+                     |
+                    <a class="switch-lang" data-lang='rus' href="#">Русский</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <div class="eng lang-block">
+                <h1>Programmer Competency Matrix</h1>
+            </div>
+            <div class="rus hidden lang-block">
+                <h1>Матрица компетентности программиста</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#experience" role="tab">
+                        <div class="eng lang-block">Experience</div>
+                        <div class="rus hidden lang-block">Опыт</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#computer-science" role="tab">
+                        <div class="eng lang-block">Computer Science</div>
+                        <div class="rus hidden lang-block">Теория</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#software-engineering" role="tab">
+                        <div class="eng lang-block">Software Engineering</div>
+                        <div class="rus hidden lang-block">Навыки</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#programming" role="tab">
+                        <div class="eng lang-block">Programming</div>
+                        <div class="rus hidden lang-block">Программирование</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#knowledge" role="tab">
+                        <div class="eng lang-block">Knowledge</div>
+                        <div class="rus hidden lang-block">Знания</div>
+                    </a>
+                </li>
+            </ul>
+            <table class="table megatable table-responsive table-bordered style-table tab-content">
+                <thead class="thead-inverse">
+                <tr class="headers">
+                    <td></td>
+                    <td>
+                        <div class="eng lang-block">
+                            2
+                            <sup>n</sup>
+                            <span class="explain">(Level 0)</span>
+                        </div>
+                        <div class="rus hidden lang-block">
+                            2
+                            <sup>n</sup>
+                            <span class="explain">(Уровень 0)</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            n
+                            <sup>2</sup>
+                            <span class="explain">(Level 1)</span>
+                        </div>
+                        <div class="rus hidden lang-block">
+                            n
+                            <sup>2</sup>
+                            <span class="explain">(Уровень 1)</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            n
+                            <span class="explain">(Level 2)</span>
+                        </div>
+                        <div class="rus hidden lang-block">
+                            n
+                            <span class="explain">(Уровень 2)</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            log(n)
+                            <span class="explain">(Level 3)</span>
+                        </div>
+                        <div class="rus hidden lang-block">
+                            log(n)
+                            <span class="explain">(Уровень 3)</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Comments</div>
+                        <div class="rus hidden lang-block">Комментарии</div>
+                    </td>
+                </tr>
+                </thead>
+                <tbody id="experience" class="tab-pane fade">
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Languages with professional experience</div>
+                        <div class="rus hidden lang-block">Языки и профессиональный опыт</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Imperative or Object Oriented</div>
+                        <div class="rus hidden lang-block">
+                            <a href="http://ru.wikipedia.org/wiki/Императивный_язык_программирования">Императивные</a>
+                            или
+                            <a href="http://ru.wikipedia.org/wiki/Объектно-ориентированный_язык_программирования">объектно-ориентированные</a>
+                            языки программирования
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Imperative, Object-Oriented and declarative (SQL),
+                                                    added bonus
+                                                    if they understand static vs dynamic typing, weak vs
+                                                    strong
+                                                    typing and static inferred types
+                        </div>
+                        <div class="rus hidden lang-block">
+                            <a href="http://ru.wikipedia.org/wiki/Императивный_язык_программирования">Императивные</a>,
+                            <a href="http://ru.wikipedia.org/wiki/Объектно-ориентированный_язык_программирования">объектно-ориентированные</a>
+                                                                                                                      и
+                            <a href="http://ru.wikipedia.org/wiki/Декларативный_язык_программирования">декларативные</a>
+                                                                                                                      (SQL)
+                                                                                                                      языки
+                                                                                                                      программирования,
+                                                                                                                      дополнительный
+                                                                                                                      бонус
+                                                                                                                      -
+                                                                                                                      если
+                                                                                                                      понимает
+                                                                                                                      разницу
+                                                                                                                      между
+                                                                                                                      статической
+                                                                                                                      и
+                                                                                                                      динамической,
+                                                                                                                      слабой
+                                                                                                                      и
+                                                                                                                      строгой
+                                                                                                                      типизацией,
+                            <a href="http://en.wikipedia.org/wiki/Type_inference">статически выводимыми типами</a>.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Functional, added bonus if they understand lazy
+                                                    evaluation,
+                                                    currying, continuations
+                        </div>
+                        <div class="rus hidden lang-block">
+                            <a href="http://ru.wikipedia.org/wiki/Язык_функционального_программирования">Функциональные
+                                                                                                         языки
+                                                                                                         программирования</a>,
+                                                                                                                             дополнительный
+                                                                                                                             бонус
+                                                                                                                             -
+                                                                                                                             если
+                                                                                                                             знает,
+                                                                                                                             что
+                                                                                                                             такое
+                                                                                                                             "<a
+                                href="http://ru.wikipedia.org/wiki/Ленивые_вычисления">ленивые вычисления</a>",
+                            <a href="http://ru.wikipedia.org/wiki/Карринг">каррирование, продолжения</a>.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Concurrent (Erlang, Oz) and Logic (Prolog)</div>
+                        <div class="rus hidden lang-block">
+                            <a href="http://en.wikipedia.org/wiki/Concurrent_computing#Concurrent_programming_languages">Конкурентные</a>
+                            (Erlang, Oz) и
+                            <a href="http://ru.wikipedia.org/wiki/Логическое_программирование">логические</a>
+                            (Prolog).
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Platforms with professional experience</div>
+                        <div class="rus hidden lang-block">Годы профессионального опыта использования платформы
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">1</div>
+                        <div class="rus hidden lang-block">1</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">2-3</div>
+                        <div class="rus hidden lang-block">2-3</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">4-5</div>
+                        <div class="rus hidden lang-block">4-5</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">6+</div>
+                        <div class="rus hidden lang-block">6+</div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Years of professional experience</div>
+                        <div class="rus hidden lang-block">Годы профессионального опыта</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">1</div>
+                        <div class="rus hidden lang-block">
+                            <span style="display: inline;" class="eng lang-block">1</span>
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">2-5</div>
+                        <div class="rus hidden lang-block">2-5</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">6-9</div>
+                        <div class="rus hidden lang-block">6-9</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">10+</div>
+                        <div class="rus hidden lang-block">
+                            10
+                            <span style="display: inline;" class="eng lang-block">+</span>
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">
+                            Domain knowledge
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Знание предметной области
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            No knowledge of the domain
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Не знает о понятии "<a href="http://en.wikipedia.org/wiki/Domain-specific_modeling">предметной
+                                                                                                                области</a>".
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Has worked on at least one product in the domain.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Работал хотя бы над одним продуктом в предметной
+                            области.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Has worked on multiple products in the same domain.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Работал над несколькими продуктами в одной и той же
+                            предметной
+                            области.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Domain expert. Has designed and implemented several
+                            products/solutions in the domain. Well versed with
+                            standard
+                            terms, protocols used in the domain.
+                        </div>
+                        <div class="rus hidden lang-block">Эксперт своей предметной области, проектировал и
+                                                           реализовывал
+                                                           несколько продуктов/решений в ней, хорошо разбирается в
+                                                           ее
+                                                           сущностях и протоколах.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            Maybe I worked in your domain, or maybe not.¯\_(ツ)_/¯
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Возможно я работал в вашей предметной области, а может и нет.¯\_(ツ)_/¯
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody id="computer-science" class="tab-pane in active show">
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Data structures</div>
+                        <div class="rus hidden lang-block">Структуры данных</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Doesn't know the difference between Array and
+                                                    LinkedList
+                        </div>
+                        <div class="rus hidden lang-block">Не понимает разницы между массивом и связным списком.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Able to explain and use Arrays, LinkedLists,
+                                                    Dictionaries etc
+                                                    in practical programming tasks
+                        </div>
+                        <div class="rus hidden lang-block">Может объяснить и использовать на практике массивы,
+                                                           связные
+                                                           списки, словари и т.д.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Knows space and time tradeoffs of the basic data
+                                                    structures,
+                                                    Arrays vs LinkedLists, Able to explain how hashtables
+                                                    can be
+                                                    implemented and can handle collisions, Priority queues
+                                                    and ways
+                                                    to implement them etc.
+                        </div>
+                        <div class="rus hidden lang-block">Понимает плюсы и минусы использования тех или иных
+                                                           базовых
+                                                           структур данных (размер памяти, время выполнения
+                                                           операций с
+                                                           данными, в чем разница между массивами и связными
+                                                           списками в
+                                                           этом плане).Может объяснить как реализовать хэш-таблицы
+                                                           и как
+                                                           обработать коллизии. Приоритетные очереди и способы их
+                                                           реализации, и т.д.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Knowledge of advanced data structures like B-trees,
+                                                    binomial
+                                                    and fibonacci heaps, AVL/Red Black trees, Splay Trees,
+                                                    Skip
+                                                    Lists, tries etc.
+                        </div>
+                        <div class="rus hidden lang-block">Знание сложных структур данных, таких как B-дерево,
+                                                           Биномиальная
+                                                           куча и Фибоначчиевская куча, АВЛ-дерево, Красно-чёрное
+                                                           дерево,
+                                                           Косое дерево, Список с пропусками, TRIE-структуры и т.д.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Algorithms</div>
+                        <div class="rus hidden lang-block">Алгоритмы</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Unable to find the average of numbers in an array (It's
+                                                    hard to
+                                                    believe but I've interviewed such candidates)
+                        </div>
+                        <div class="rus hidden lang-block">Не может найти среднее значение массива чисел. (Тяжело
+                                                           поверить,
+                                                           но встречаются и такие кандидаты на собеседовании.)
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Basic sorting, searching and data structure traversal
+                                                    and
+                                                    retrieval algorithms
+                        </div>
+                        <div class="rus hidden lang-block">Базовые методы сортировки и поиска. Обход и поиск в
+                                                           структурах
+                                                           данных.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Tree, Graph, simple greedy and divide and conquer
+                                                    algorithms,
+                                                    is able to understand the relevance of the levels of
+                                                    this
+                                                    matrix.
+                        </div>
+                        <div class="rus hidden lang-block">Деревья, Графы, "простой путь" и "разделяй-и-властвуй"
+                                                           алгоритмы, понимает значимость уровней приведенной здесь
+                                                           матрицы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to recognize and code dynamic programming
+                                                    solutions, good
+                                                    knowledge of graph algorithms, good knowledge of
+                                                    numerical
+                                                    computation algorithms, able to identify NP problems
+                                                    etc.
+                        </div>
+                        <div class="rus hidden lang-block">Может распознать и написать решение динамическим
+                                                           программированием, хорошо знает алгоритмы на графах,
+                                                           хорошо
+                                                           знает численные методы, может идентифицировать проблемы
+                                                           класса
+                                                           NP.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block"></div>
+                        <div class="rus hidden lang-block"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Systems programming</div>
+                        <div class="rus hidden lang-block">Системное программирование</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Doesn't know what a compiler, linker or interpreter
+                                                    is
+                        </div>
+                        <div class="rus hidden lang-block">Не знает что такое компилятор, линковщик или
+                                                           интерпретатор.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Basic understanding of compilers, linker and
+                                                    interpreters.
+                                                    Understands what assembly code is and how things work
+                                                    at the
+                                                    hardware level. Some knowledge of virtual memory and
+                                                    paging.
+                        </div>
+                        <div class="rus hidden lang-block">Базовое понимание компиляторов, линковщиков и
+                                                           интерпретаторов.Понимает, что такое ассемблерный код и
+                                                           как
+                                                           работают программы на уровне железа. Небольшое понимание
+                                                           виртуальной памяти и пэйджинга.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Understands kernel mode vs. user mode, multi-threading,
+                                                    synchronization primitives and how they're implemented,
+                                                    able to
+                                                    read assembly code. Understands how networks work,
+                                                    understanding of network protocols and socket level
+                                                    programming.
+                        </div>
+                        <div class="rus hidden lang-block">Понимает чем отличается kernel mode от user mode, что
+                                                           такое
+                                                           мульти-трединг, способы синхронизации и как реализованы
+                                                           примитивы синхронизации, может читать ассемблерный код.
+                                                           Понимает, как работают сети, сетевые протоколы и может
+                                                           реализовать передачу данных через сокеты.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Understands the entire programming stack, hardware (CPU
+                                                    +
+                                                    Memory + Cache + Interrupts + microcode), binary code,
+                                                    assembly, static and dynamic linking, compilation,
+                                                    interpretation, JIT compilation, garbage collection,
+                                                    heap,
+                                                    stack, memory addressing...
+                        </div>
+                        <div class="rus hidden lang-block">Понимает как работает весь "программный стэк": железо
+                                                           (CPU +
+                                                           Память + Кэш + Прерывания + микрокоды), двоичный код,
+                                                           ассемблер,
+                                                           статическая и динамическая линковка, копиляция,
+                                                           интерпретация,
+                                                           JIT-компиляция, сборка мусора, куча, стэк, адресация
+                                                           памяти…..
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody id="software-engineering" class="tab-pane fade">
+                <tr>
+                    <td>
+                        <div class="eng lang-block">
+                            Source code version control
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Контроль версий исходников
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Folder backups by date
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Бэкап исходников в папку с датой бэкапа.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            VSS and beginning CVS/SVN user
+                        </div>
+                        <div class="rus hidden lang-block">
+                            VSS и основы CVS/SVN в качестве пользователя
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            Proficient in using CVS and SVN features. Knows how to
+                            branch
+                            and merge, use patches setup repository properties etc.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Специалист по возможностям CVS and SVN. Знает как
+                            разветвить и
+                            слить, настроить репозитарий и т.д.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Knowledge of distributed VCS systems. Has tried out
+                            Bzr/Mercurial/Darcs/Git
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Знает распределенные системы VCS. Пробовал
+                            Bzr/Mercurial/Darcs/Git
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Build automation</div>
+                        <div class="rus hidden lang-block">Автоматизация build'ов</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Only knows how to build from IDE</div>
+                        <div class="rus hidden lang-block">Знает как запустить Build из среды программирования.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Knows how to build the system from the command line
+                        </div>
+                        <div class="rus hidden lang-block">Умеет билдить из командной строки.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Can setup a script to build the basic system</div>
+                        <div class="rus hidden lang-block">Может настроить скрипт для сборки основной системы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Can setup a script to build the system and also
+                                                    documentation,
+                                                    installers, generate release notes and tag the code in
+                                                    source
+                                                    control
+                        </div>
+                        <div class="rus hidden lang-block">Может настроить скрипт для сборки системы и
+                                                           документации,
+                                                           инсталляторов, генераторов "release notes" и добавит
+                                                           скрипт в
+                                                           систему контроля версий исходников.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Automated testing</div>
+                        <div class="rus hidden lang-block">Автоматизированное тестирование</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Thinks that all testing is the job of the tester</div>
+                        <div class="rus hidden lang-block">Думает, что тестирование - это работа тестеров.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has written automated unit tests and comes up with good
+                                                    unit
+                                                    test cases for the code that is being written
+                        </div>
+                        <div class="rus hidden lang-block">Написал автоматизированные юнит-тесты и может создавать
+                                                           свои
+                                                           хорошие юнит-тесты для кода, который пишет в настоящее
+                                                           время.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has written code in TDD manner</div>
+                        <div class="rus hidden lang-block">Пишет код в стиле Test-driven Development (TDD).</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Understands and is able to setup automated functional,
+                                                    load/performance and UI tests
+                        </div>
+                        <div class="rus hidden lang-block">Понимает и может настроить автоматические тесты на
+                                                           функционал,
+                                                           пользовательский интерфейс и
+                                                           загрузку/производительность.
+                        </div>
+                    </td>
+                    <td>
+                        <strong>PhpUnit</strong>
+                        <strong>RSpec</strong>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody id="programming" class="tab-pane fade">
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Problem decomposition</div>
+                        <div class="rus hidden lang-block">Декомпозиция задачи</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Only straight line code with copy paste for reuse</div>
+                        <div class="rus hidden lang-block">Просто последовательные строчки кода, а copy/paste -для
+                                                           повторного использования кода.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to break up problem into multiple functions</div>
+                        <div class="rus hidden lang-block">Может разбивать решение задачи на несколько функций.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to come up with reusable functions/objects that
+                                                    solve the
+                                                    overall problem
+                        </div>
+                        <div class="rus hidden lang-block">Способен создавать многократно используемые
+                                                           функции/объекты,
+                                                           которые решают общие задачи.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Use of appropriate data structures and algorithms and
+                                                    comes up
+                                                    with generic/object-oriented code that encapsulate
+                                                    aspects of
+                                                    the problem that are subject to change.
+                        </div>
+                        <div class="rus hidden lang-block">Использует соответствующие структуры данных и алгоритмы.
+                                                           Создает
+                                                           общий/объектно-ориентированный код, который
+                                                           инкапсулирует те
+                                                           условия задачи, которые могут быт изменены.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Systems decomposition</div>
+                        <div class="rus hidden lang-block">Декомпозиция системы</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Not able to think above the level of a single
+                                                    file/class
+                        </div>
+                        <div class="rus hidden lang-block">Не способен думать о системе, сложнее одного класса или
+                                                           файла.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Able to break up problem space and design solution as
+                                                    long as
+                                                    it is within the same platform/technology
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Может произвести декомпозицию задачи и спроектировать
+                            систему в
+                            пределах одной платформы или технологии.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to design systems that span multiple
+                                                    technologies/platforms.
+                        </div>
+                        <div class="rus hidden lang-block">Может спроектировать систему, которая охватывает
+                                                           несколько
+                                                           технологий/платформ.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to visualize and design complex systems with
+                                                    multiple
+                                                    product lines and integrations with external systems.
+                                                    Also
+                                                    should be able to design operations support systems
+                                                    like
+                                                    monitoring, reporting, fail overs etc.
+                        </div>
+                        <div class="rus hidden lang-block">Может визуализировать и проектировать сложные системы с
+                                                           несколькими линейками продуктов и интеграцией с внешними
+                                                           системами. Также должен уметь проектировать системы
+                                                           поддержки
+                                                           работы: мониторинг, генерация отчетов, аварийные
+                                                           переходы на
+                                                           использование запасных ресурсов.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Communication</div>
+                        <div class="rus hidden lang-block">Общение</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            Cannot express thoughts/ideas to peers. Poor spelling
+                            and
+                            grammar.
+                            At the level of reading technical documentation.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Не может выразить свои мысли/идеи. Плохо с правописанием
+                            и
+                            грамматикой.
+                            На уровне чтения технической документации.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Peers can understand what is being said. Good spelling
+                                                    and
+                                                    grammar.
+                        </div>
+                        <div class="rus hidden lang-block">Его понимают. Хорошие правописание и грамматика.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Is able to effectively communicate with peers</div>
+                        <div class="rus hidden lang-block">Может эффективно общаться.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to understand and communicate
+                                                    thoughts/design/ideas/specs
+                                                    in a unambiguous manner and adjusts communication as
+                                                    per the
+                                                    context
+                        </div>
+                        <div class="rus hidden lang-block">Может понимать и объяснять мысли/дизайн/идеи/специфику в
+                                                           точно
+                                                           выраженной форме, в общении соответствует ситуации.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            This item is about English. <br>
+                            This is an often under rated but very critical criteria
+                            for
+                            judging a programmer. With the increase in outsourcing
+                            of
+                            programming tasks to places where English is not the
+                            native
+                            tongue this issue has become more prominent. I know of
+                            several
+                            projects that failed because the programmers could not
+                            understand what the intent of the communication was.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Этот пункт об английском языке. <br>
+                            Важность этого критерия для программиста часто
+                            недооценивают. С
+                            увеличением аутсорсинга разработки ПО в те страны, где
+                            английский не является родным языком, этот вопрос стал
+                            более
+                            актуальным. Я знаю несколько проектов, которые
+                            провалились
+                            потому, что программисты не могли понять смысл
+                            обсуждения.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Code organization within a file</div>
+                        <div class="rus hidden lang-block">Организация кода в файле</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">no evidence of organization within a file</div>
+                        <div class="rus hidden lang-block">Нет четкой организации в файле.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Methods are grouped logically or by accessibility</div>
+                        <div class="rus hidden lang-block">Методы сгрупированны логически и по вызовам.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Code is grouped into regions and well commented with
+                                                    references
+                                                    to other source files
+                        </div>
+                        <div class="rus hidden lang-block">Код разделен на регионы, имеет хорошие комментарии, в
+                                                           т.ч. со
+                                                           ссылками на другие файлы исходников.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">File has license header, summary, well commented,
+                                                    consistent
+                                                    white space usage. The file should look beautiful.
+                        </div>
+                        <div class="rus hidden lang-block">Файл имеет разделы "license header", "summary", хорошие
+                                                           комментарии, непротиворечивую расстановку пробелов и
+                                                           табуляции.
+                                                           Файл должен выглядеть красиво.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Code organization across files</div>
+                        <div class="rus hidden lang-block">Организация кода между файлами</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">No thought given to organizing code across files</div>
+                        <div class="rus hidden lang-block">Не приходит в голову мысль четко организовать код с
+                                                           помощью
+                                                           разделения на файлы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Related files are grouped into a folder</div>
+                        <div class="rus hidden lang-block">Похожие файлы группируются в папку.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Each physical file has a unique purpose, for e.g. one
+                            class
+                            definition, one feature implementation etc.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Каждый физический файл предназначен для чего-то одного,
+                            например, служит для объявления одного класса или для
+                            реализации
+                            одного функционала и т.д.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            Code organization at a physical level closely matches
+                            design
+                            and looking at file names and folder distribution
+                            provides
+                            insights into design
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Организация кода на физическом уровне точно
+                            соответствует
+                            проекту, и, глядя на имена файлов и структуру папок,
+                            можно
+                            понять как спроектирована данная реализация.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Source tree organization</div>
+                        <div class="rus hidden lang-block">Организация дерева исходников</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Everything in one folder</div>
+                        <div class="rus hidden lang-block">Все в одной папке.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Basic separation of code into logical folders.</div>
+                        <div class="rus hidden lang-block">Простое разделение кода в логические подкаталоги.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">No circular dependencies, binaries, libs, docs, builds,
+                                                    third-party code all organized into appropriate folders
+                        </div>
+                        <div class="rus hidden lang-block">Нет "круговых" зависимостей. Бинарники, либы,
+                                                           документация,
+                                                           билды, сторонний код -- все разложено в соответствующие
+                                                           папки.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Physical layout of source tree matches logical
+                                                    hierarchy and
+                                                    organization. The directory names and organization
+                                                    provide
+                                                    insights into the design of the system.
+                        </div>
+                        <div class="rus hidden lang-block">Структура дерева исходного кода соответствует логической
+                                                           иерархии и организации кода в проекте. Глядя на имена
+                                                           файлов и
+                                                           структуру папок, можно понять как спроектирована данная
+                                                           система.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">The difference between this and the previous item is in
+                                                    the
+                                                    scale of organization, source tree organization relates
+                                                    to the
+                                                    entire set of artifacts that define the system.
+                        </div>
+                        <div class="rus hidden lang-block">Разница между этим пунктом и предыдущим состоит в
+                                                           масштабе
+                                                           организации. Организация дерева исходников относится к
+                                                           всему
+                                                           комплексу продуктов, которые определяют систему.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Code readability</div>
+                        <div class="rus hidden lang-block">Читабельность кода</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Mono-syllable names</div>
+                        <div class="rus hidden lang-block">Односложные имена.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Good names for files, variables classes, methods etc.
+                        </div>
+                        <div class="rus hidden lang-block">Хорошие имена файлов, переменных, классов, методов и
+                                                           т.д.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">No long functions, comments explaining unusual code,
+                                                    bug fixes,
+                                                    code assumptions
+                        </div>
+                        <div class="rus hidden lang-block">Нет длинных функций, а нестандартный код, багфиксы и
+                                                           допущения в
+                                                           коде поясняются комментариями.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Code assumptions are verified using asserts, code flows
+                                                    naturally - no deep nesting of conditionals or methods
+                        </div>
+                        <div class="rus hidden lang-block">Допущения в коде сопровождаются assert'ами, поток
+                                                           операций в
+                                                           коде естественный - нет глубокой вложенности условий или
+                                                           методов.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Defensive coding</div>
+                        <div class="rus hidden lang-block">Безопасное программирование (defensive coding)</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Doesn't understand the concept</div>
+                        <div class="rus hidden lang-block">Не понимает данной концепции.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Checks all arguments and asserts critical assumptions
+                                                    in code
+                        </div>
+                        <div class="rus hidden lang-block">Проверяет все аргументы и ставит assert'ы на критические
+                                                           допущения в коде.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Makes sure to check return values and check for
+                                                    exceptions
+                                                    around code that can fail.
+                        </div>
+                        <div class="rus hidden lang-block">Убеждается, что проверил возвращаемое значение и что
+                                                           обрабатывает исключения в потенциально бажном коде.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has his own library to help with defensive coding,
+                                                    writes unit
+                                                    tests that simulate faults
+                        </div>
+                        <div class="rus hidden lang-block">Имеет свою собственную библиотеку помогающую в
+                                                           безопасном
+                                                           программировании, пишет юнит-тесты которые эмулируют
+                                                           сбои.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Error handling</div>
+                        <div class="rus hidden lang-block">Обработка ошибок</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Only codes the happy case</div>
+                        <div class="rus hidden lang-block">Пишет код для "идеального" случая, когда все работает и
+                                                           нет
+                                                           сбоев.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Basic error handling around code that can throw
+                                                    exceptions/generate errors
+                        </div>
+                        <div class="rus hidden lang-block">Обработка ошибок в коде, который либо кидает исключение,
+                                                           либо
+                                                           генерирует ошибку.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Ensures that error/exceptions leave program in good
+                                                    state,
+                                                    resources, connections and memory is all cleaned up
+                                                    properly
+                        </div>
+                        <div class="rus hidden lang-block">Убеждается, что после того, как произошла
+                                                           ошибка/исключение,
+                                                           программа продолжает работать, а ненужные более ресурсы,
+                                                           коннекшоны и память были корректно освобождены
+                                                           обработчиком
+                                                           ошибки.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Codes to detect possible exception before, maintain
+                                                    consistent
+                                                    exception handling strategy in all layers of code, come
+                                                    up with
+                                                    guidelines on exception handling for entire system.
+                        </div>
+                        <div class="rus hidden lang-block">Пишет код так, чтобы определять возможные ошибки на
+                                                           раннем
+                                                           этапе, придерживается последовательной стратегии
+                                                           обработки
+                                                           исключений во всех слоях кода, разрабатывает общие
+                                                           принципы
+                                                           обработки исключений во всей системе.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">IDE</div>
+                        <div class="rus hidden lang-block">Среда программирования (IDE)</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Mostly uses IDE for text editing</div>
+                        <div class="rus hidden lang-block">В основном использует IDE для редактирования текста.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Knows their way around the interface, able to
+                                                    effectively use
+                                                    the IDE using menus.
+                        </div>
+                        <div class="rus hidden lang-block">Способен эффективно пользоваться меню в IDE. Знает
+                                                           некоторые
+                                                           тонкости среды.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Knows keyboard shortcuts for most used operations.
+                        </div>
+                        <div class="rus hidden lang-block">Для самых используемых функций среды знает горячие
+                                                           клавиши.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has written custom macros</div>
+                        <div class="rus hidden lang-block">Написал свои макросы.</div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">API</div>
+                        <div class="rus hidden lang-block">API</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Needs to look up the documentation frequently</div>
+                        <div class="rus hidden lang-block">Часто нуждается в обращениях к документации.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has the most frequently used APIs in memory</div>
+                        <div class="rus hidden lang-block">Помнит самые часто используемые API.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Vast and In-depth knowledge of the API</div>
+                        <div class="rus hidden lang-block">Обширные и глубокие знания API.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has written libraries that sit on top of the API to
+                                                    simplify
+                                                    frequently used tasks and to fill in gaps in the API
+                        </div>
+                        <div class="rus hidden lang-block">Написал библиотеки, которые оборачивают API, для
+                                                           упрощения
+                                                           задач, которые наиболее часто встречаются. Эти
+                                                           библиотеки также
+                                                           часто восполняют пробелы в API.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">E.g. of API can be Java library, .net framework or the
+                                                    custom
+                                                    API for the application
+                        </div>
+                        <div class="rus hidden lang-block">Примером API может быть Java-библиотека, .Net фреймворк
+                                                           или API
+                                                           какого-либо приложения.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Frameworks</div>
+                        <div class="rus hidden lang-block">Фреймфорки</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has not used any framework outside of the core
+                                                    platform
+                        </div>
+                        <div class="rus hidden lang-block">Не использует никаких фреймверков за рамками основной
+                                                           платформы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has heard about but not used the popular frameworks
+                                                    available
+                                                    for the platform.
+                        </div>
+                        <div class="rus hidden lang-block">Знает, но не использует популярные фреймворки, доступные
+                                                           для его
+                                                           платформы.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has used more than one framework in a professional
+                                                    capacity and
+                                                    is well-versed with the idioms of the frameworks.
+                        </div>
+                        <div class="rus hidden lang-block">Профессионально пользовался более чем одним фреймворком
+                                                           и хорошо
+                                                           разбирается в идиомах фреймворков.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Author of framework</div>
+                        <div class="rus hidden lang-block">Является автором фреймворка.</div>
+                    </td>
+                    <td>
+                        <strong>Yii/Yii2</strong><br>
+                        <strong>Kohana</strong><br>
+                        <strong>Symfony 2</strong><br>
+                        <strong>Ruby on Rails</strong><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Requirements</div>
+                        <div class="rus hidden lang-block">Требования</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Takes the given requirements and codes to spec</div>
+                        <div class="rus hidden lang-block">Понимает выставленные требования и пишет код в
+                                                           соответствии со
+                                                           спецификацией.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Come up with questions regarding missed cases in the
+                                                    spec
+                        </div>
+                        <div class="rus hidden lang-block">Задает вопросы касающиеся не рассмотренных в
+                                                           спецификации
+                                                           случаев.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Understand complete picture and come up with entire
+                                                    areas that
+                                                    need to be speced
+                        </div>
+                        <div class="rus hidden lang-block">Понимает картину в целом и предлагает дополнительные
+                                                           аспекты,
+                                                           которые должны быть описаны в спецификации.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Able to suggest better alternatives and flows to given
+                                                    requirements based on experience
+                        </div>
+                        <div class="rus hidden lang-block">Может предложить лучшие альтернативы и следовать
+                                                           выставленным
+                                                           требованиям, основываясь на собственном опыте.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Scripting</div>
+                        <div class="rus hidden lang-block">Скрипты</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">No knowledge of scripting tools</div>
+                        <div class="rus hidden lang-block">Отсутствует знание скриптовых инструментов.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Batch files/shell scripts</div>
+                        <div class="rus hidden lang-block">Batch-файлы/shell.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Perl/Python/Ruby/VBScript/Powershell</div>
+                        <div class="rus hidden lang-block">Perl/Python/Ruby/VBScript/Powershell.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has written and published reusable code</div>
+                        <div class="rus hidden lang-block">Писал и публиковал повторно используемые скрипты.</div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Database</div>
+                        <div class="rus hidden lang-block">Базы данных</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Thinks that Excel is a database</div>
+                        <div class="rus hidden lang-block">Думает, что Excel - это база данных.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Knows basic database concepts, normalization, ACID,
+                                                    transactions and can write simple selects
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Знает основы баз данных, нормализацию,
+                            <a href="http://ru.wikipedia.org/wiki/ACID">ACID</a>,
+                            транзакции и может написать простые select'ы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Able to design good and normalized database schemas
+                            keeping in
+                            mind the queries that'll have to be run, proficient in
+                            use of
+                            views, stored procedures, triggers and user defined
+                            types.
+                            Knows difference between clustered and non-clustered
+                            indexes.
+                            Proficient in use of ORM tools.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Может спроектировать хорошие нормализованные схемы БД, с учетом запросов, которые будут
+                            выполняться;
+                            умело использует представления, хранимые процедуры, триггеры и собственные типы данных.
+                            Понимает
+                            разницу между кластеризованными и не-кластеризованными индексами. Специалист в использовании
+                            <a href="http://ru.wikipedia.org/wiki/ORM">ORM</a>-инструментов.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Can do basic database administration, performance
+                                                    optimization,
+                                                    index optimization, write advanced select queries, able
+                                                    to
+                                                    replace cursor usage with relational sql, understands
+                                                    how data
+                                                    is stored internally, understands how indexes are
+                                                    stored
+                                                    internally, understands how databases can be mirrored,
+                                                    replicated etc. Understands how the two phase commit
+                                                    works.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Может осуществлять администрирование БД, оптимизацию производительности БД, индексную
+                            оптимизацию,
+                            писать сложные select'ы, может заменить использование курсора вызовами функций sql, понимает
+                            как
+                            данные хранятся внутри, как хранятся индексы, имеет представление о том, как зеркалятся и
+                            реплицируются БД и т.д. Понимает как работает
+                            <a href="http://en.wikipedia.org/wiki/Two-phase_commit_protocol">двухфазный commit</a>.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                </tbody>
+                <tbody id="knowledge" class="tab-pane fade">
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Tool knowledge</div>
+                        <div class="rus hidden lang-block">Инструментарии</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Limited to primary IDE (VS.Net, Eclipse etc.)
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Ограничены используемой IDE (VS.Net, Eclipse etc.)
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Knows about some alternatives to popular and standard
+                                                    tools.
+                        </div>
+                        <div class="rus hidden lang-block">Знает о некоторых альтернативах популярным стандартным
+                                                           инструментариям.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Good knowledge of editors, debuggers, IDEs, open source
+                                                    alternatives etc. etc. For e.g. someone who knows most
+                                                    of the
+                                                    tools from Scott Hanselman's power tools list. Has used
+                                                    ORM
+                                                    tools.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Хорошие знания редакторов код, отладчиков, различных IDE, open-source альтернативах и т.д.
+                            (Например, это может быть кто-то, кто знает большинство инструментов из
+                            <a href="http://www.hanselman.com/blog/ScottHanselmans2007UltimateDeveloperAndPowerUsersToolListForWindows.aspx">списка
+                                                                                                                                             Скота
+                                                                                                                                             Ганзельмана</a>.)Использует
+                            <a href="http://wiki.geeklog.net/wiki/index.php/Introduction_to_Object_Relational_Mapping_(ORM)_Tools">ORM-инструменты</a>.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has actually written tools and scripts, added bonus if
+                                                    they've
+                                                    been published.
+                        </div>
+                        <div class="rus hidden lang-block">Написал свои инструментарии и скрипты, дополнительный
+                                                           плюс -
+                                                           если эти скрипты были опубликованы.
+                        </div>
+                    </td>
+                    <td>
+                        <strong>PhpStorm</strong><br>
+                        <strong>Draw.io</strong><br>
+                        <strong>Terminator</strong><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Codebase knowledge</div>
+                        <div class="rus hidden lang-block">Знание codebase</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has never looked at the codebase</div>
+                        <div class="rus hidden lang-block">
+                            Никогда не смотрел
+                            <a href="http://ru.wikipedia.org/wiki/Основание_кода">code base</a>.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Basic knowledge of the code layout and how to build the
+                                                    system
+                        </div>
+                        <div class="rus hidden lang-block">Имеет общее представление о расположении кода и о том,
+                                                           как его
+                                                           собрать.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Good working knowledge of code base, has implemented
+                                                    several
+                                                    bug fixes and maybe some small features.
+                        </div>
+                        <div class="rus hidden lang-block">Хорошие рабочие знания code base, реализовывал несколько
+                                                           багфиксов и, может быть, некоторые маленькие фичи.
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has implemented multiple big features in the codebase
+                                                    and can
+                                                    easily visualize the changes required for most features
+                                                    or bug
+                                                    fixes.
+                        </div>
+                        <div class="rus hidden lang-block">Реализовал несколько больших фич в code base и может
+                                                           легко
+                                                           описать изменения, требуемые для реализации большинства
+                                                           фич или
+                                                           багфисков.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Knowledge of upcoming technologies</div>
+                        <div class="rus hidden lang-block">Знание новейших технологий</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has not heard of the upcoming technologies</div>
+                        <div class="rus hidden lang-block">Не слышал о новейших технологиях.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has heard of upcoming technologies in the field</div>
+                        <div class="rus hidden lang-block">Слышал о новейших технологиях в своей области.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has downloaded the alpha preview/CTP/beta and read some
+                                                    articles/manuals
+                        </div>
+                        <div class="rus hidden lang-block">Слышал о новейших технологиях в своей области. Скачивал
+                                                           alpha/preview/CTP/beta-версии и читал некоторые стати и
+                                                           руководства на эти темы.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has played with the previews and has actually built
+                                                    something
+                                                    with it and as a bonus shared that with everyone else
+                        </div>
+                        <div class="rus hidden lang-block">Пробовал сделать что-либо сам и используя preview-версию
+                                                           сбилдил
+                                                           свою программу. Дополнительный плюс - если сделал свое
+                                                           решение
+                                                           доступным для других.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Platform internals</div>
+                        <div class="rus hidden lang-block">Знание внутренних аспектов платформы</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Zero knowledge of platform internals</div>
+                        <div class="rus hidden lang-block">Нулевые знания внутренних аспектов платформы.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">Has basic knowledge of how the platform works
+                                                    internally
+                        </div>
+                        <div class="rus hidden lang-block">В основном, знает как работает платформа внутри.</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Deep knowledge of platform internals and can visualize
+                                                    how the
+                                                    platform takes the program and converts it into
+                                                    executable
+                                                    code.
+                        </div>
+                        <div class="rus hidden lang-block">Имеет глубокие познания внутренних аспектов платформы и
+                                                           может
+                                                           обрисовать, как платформа превращает программу в
+                                                           исполняемый
+                                                           код.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has written tools to enhance or provide information on
+                                                    platform
+                                                    internals. For e.g. disassemblers, decompilers,
+                                                    debuggers etc.
+                        </div>
+                        <div class="rus hidden lang-block">Написал свои инструменты для расширения возможностей
+                                                           платформы
+                                                           или для
+                                                           извлечения дополнительной информации о работе платформы.
+                                                           Например, дизассемблер, декомпилятор, отладчик и т.д.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Books</div>
+                        <div class="rus hidden lang-block">Книги</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Unleashed series, 21 days series, 24 hour series,
+                                                    dummies
+                                                    series...
+                        </div>
+                        <div class="rus hidden lang-block">Серии книг "... за 21 день", "... за 24 часа", "... для
+                                                           чайников".
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Code Complete, Don't Make me Think, Mastering Regular
+                            Expressions
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Code Complete, Don't Make me Think, Mastering Regular
+                            Expressions
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Design Patterns, Peopleware, Programming Pearls,
+                                                    Algorithm
+                                                    Design Manual, Pragmatic Programmer, Mythical Man month
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Design Patterns, Peopleware, Programming Pearls,
+                            Algorithm
+                            Design Manual, Pragmatic Programmer, Mythical Man month
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Structure and Interpretation of Computer Programs,
+                                                    Concepts
+                                                    Techniques, Models of Computer Programming, Art of
+                                                    Computer
+                                                    Programming, Database systems , by C. J Date, Thinking
+                                                    Forth,
+                                                    Little Schemer
+                        </div>
+                        <div class="rus hidden lang-block">
+                            <a href="http://www.ozon.ru/context/detail/id/1831038/">Structure and Interpretation of
+                                                                                    Computer
+                                                                                    Programs</a>
+                            <br>
+                            <a href="http://www.ozon.ru/context/detail/id/1829832/">Concepts Techniques and Models of
+                                                                                    Computer
+                                                                                    Programming</a>
+                            <br>
+                            <p>
+                                <a href="http://oz.by/books/more.phtml?id=101588&amp;partner=devby">Искусство
+                                                                                                    программирования</a>
+                                <br>
+                                <a href="http://www.ozon.ru/context/detail/id/1829471/">Database systems , by C. J
+                                                                                        Date</a>
+                                <br>
+                                <a href="http://www.amazon.com/Thinking-Forth-Leo-Brodie/dp/0976458705/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1216551535&amp;sr=1-1">Thinking
+                                                                                                                                                                          Forth</a>
+                                <br>
+                                <a href="http://www.amazon.com/Little-Schemer-Daniel-P-Friedman/dp/0262560992/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1216551749&amp;sr=1-1">Little
+                                                                                                                                                                                 Schemer</a>
+                            </p>
+                        </div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            <strong>
+                                <a href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B:_%D0%BF%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7">
+                                    Алгоритмы: построение и анализ, Томас Кормен
+                                </a>
+                            </strong>
+                        </div>
+                        <div class="rus hidden lang-block">
+                            <strong>
+                                <a href="https://en.wikipedia.org/wiki/Introduction_to_Algorithms">
+                                    Introduction to Algorithms, by Thomas H. Cormen
+                                </a>
+                            </strong><br>
+                        </div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="eng lang-block">Blogs</div>
+                        <div class="rus hidden lang-block">Блоги</div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">Has heard of them but never got the time.</div>
+                        <div class="rus hidden lang-block">Слышал о блогах, но не уделял им внимания.</div>
+                    </td>
+                    <td class="table-success">
+                        <div class="eng lang-block">
+                            Reads tech/programming/software engineering blogs and
+                            listens
+                            to podcasts regularly.
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Читает технические блоги, блоги о программировании и
+                            разработке
+                            ПО и регулярно слушает подкасты.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Maintains a link blog with some collection of useful
+                            articles
+                            and tools that he/she has collected
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Ведет ссылочный блог, содержащий коллекции ссылок на
+                            полезные
+                            статьи и инструменты, которые [ссылки] он собирает.
+                        </div>
+                    </td>
+                    <td>
+                        <div class="eng lang-block">
+                            Maintains a blog in which personal insights and
+                            thoughts on
+                            programming are shared
+                        </div>
+                        <div class="rus hidden lang-block">
+                            Ведет блог, в котором содержатся его собственные
+                            понимание
+                            вопросов и соображения на тему программирования.
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p class="links">
+                <a href="http://www.indiangeek.net/programmer-competency-matrix/" target="_blank">
+                    Programmer Competency Matrix.
+                </a>
+                <a href="http://docs.google.com/View?docid=d28gm4q_55n35dkht4" target="_blank">
+                    Оригинал перевода.
+                </a>
+                <a href="https://dev.by/pages/programming_matrix" target="_blank">
+                    Оригинал таблицы.
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous">
+</script>
+<script src="script.js">
+</script>
+</body>
 </html>
