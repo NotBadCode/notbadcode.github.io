@@ -8,6 +8,10 @@
     <title>Sergey Filin CV</title>
 </head>
 <body>
+<div class="stack-item print-button" onclick="window.print();return false;" >
+    <img src="assets/images/icons/print.svg" alt="" class="icon">
+    <span>Print</span>
+</div>
 <div class="main-data">
     <div class="left-block left-block-main">
         <h1>
@@ -391,15 +395,24 @@
         list-style: none;
     }
 
+    .print-button {
+        justify-content: right;
+        cursor: pointer;
+    }
+
     @media print {
         body {
             box-sizing: border-box;
             width: 21cm;
             height: 29.7cm;
+            font-size: 14px;
         }
 
         .right-block-main {
             width: 26%;
+        }
+        .print-button {
+            display: none;
         }
     }
 </style>
