@@ -8,10 +8,10 @@
     <title>Sergey Filin CV</title>
 </head>
 <body>
-<div class="stack-item print-button" onclick="window.print();return false;" >
+<a class="stack-item print-button" href="/SergeyFilinCV.pdf" target="_blank">
     <img src="assets/images/icons/print.svg" alt="" class="icon">
-    <span>Print</span>
-</div>
+    <span>Print/PDF</span>
+</a>
 <div class="flex-data flex-data-main">
     <div class="left-block left-block-main">
         <h1>
@@ -65,9 +65,8 @@
                 </div>
             </div>
             Real-time ad binding platform. <br>
-            This is a vast project including an advertisers’ self-service website with advanced reporting tools <br>
+            This is a vast project including an advertisers’ self-service website with advanced reporting tools
             and payment gateways integrations written in PHP, a bidding cluster responsible for bidding written in Java
-            <br>
             and distributed databases in MySql and ClickHouse (400TiB+ of data). <br>
             I was developing a website, personal accounts, promo codes and payment systems integrations.
             I was also responsible for the user interface of statistics and data display from distributed sources
@@ -325,8 +324,9 @@
 </div>
 <style>
     body {
-        max-width: 1600px;
-        margin: 10px auto;
+        max-width: 100em;
+        padding: 0 1em;
+        margin: 0.625em auto;
     }
 
     .flex-data {
@@ -337,7 +337,7 @@
 
     .left-block {
         box-sizing: border-box;
-        margin-right: 15px;
+        margin-right: 0.9375em;
     }
 
     .left-block-main {
@@ -354,7 +354,7 @@
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 250px;
+        max-width: 0.9375em;
         box-sizing: border-box;
     }
 
@@ -362,11 +362,11 @@
         display: flex;
         align-content: center;
         align-items: center;
-        margin-right: 5px;
+        margin-right: 0.3125em;
     }
 
     .right-block .stack-item {
-        margin-bottom: 2px;
+        margin-bottom: 0.125em;
     }
 
     .position-header {
@@ -375,25 +375,25 @@
         align-items: center;
         justify-content: flex-start;
         flex-wrap: wrap;
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
     }
 
     .position-header div, .position-header span {
         box-sizing: border-box;
-        min-width: 200px;
+        min-width: 12.5em;
         text-after-overflow: center;
         justify-content: center;
     }
 
     .position-header a {
         box-sizing: border-box;
-        min-width: 120px;
+        min-width: 7.5em;
     }
 
     .icon {
         box-sizing: border-box;
-        width: 20px;
-        margin-right: 5px;
+        width: 1.25em;
+        margin-right: 0.3125em;
     }
 
     ul {
@@ -403,15 +403,47 @@
     .print-button {
         justify-content: right;
         cursor: pointer;
+        text-decoration: none;
+        color: black;
     }
 
+    @media screen and (max-width: 600px) {
+        .left-block-main {
+            max-width: unset;
+        }
+
+        .right-block-main {
+            width: unset;
+        }
+    }
+
+
     @media print {
+        @page {
+            size: auto;
+            margin: 0;
+        }
         body {
             box-sizing: border-box;
             width: 21cm;
             height: 29.7cm;
             font-size: 14px;
-            margin: 0;
+            margin: 0 20px;
+            padding: 0;
+        }
+
+        .left-block-main h1 {
+            margin-bottom: 10px;
+        }
+
+        .left-block-main h2 {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+
+        .left-block-main h3 {
+            margin-top: 0px;
+            margin-bottom: 10px;
         }
 
         .left-block-main {
